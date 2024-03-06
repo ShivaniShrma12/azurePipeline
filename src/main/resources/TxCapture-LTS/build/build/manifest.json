@@ -1,0 +1,26 @@
+{
+  "name": "Tx Capture",
+  "description": "Chrome extension - converting browser event to UiPath XML",
+  "version": "4.1.0",
+  "permissions": ["storage", "tabs", "scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/tx-logo-1.png",
+      "32": "assets/icons/tx-logo-2.png",
+      "48": "assets/icons/tx-logo-3.png"
+    }
+  }
+}
