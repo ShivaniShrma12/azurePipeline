@@ -13,6 +13,7 @@ Feature: Verify Login functionality
       | TestData  |
       | TestCase1 |
 
+
   @ECOM_LoginTC_231
   Scenario Outline: Test to check the Log in with both email and password invalid
     Given Read the test data "<TestData>" from Excel file
