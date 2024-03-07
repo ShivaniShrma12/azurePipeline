@@ -21,7 +21,7 @@ steps:
 - task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'mvn clean verify "-Dcucumber.options=--tags ~@ECOM_LoginTC_207"'
+    goals: 'clean verify "-Dcucumber.options=--tags ~@ECOM_LoginTC_207"'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
