@@ -1,0 +1,13 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: Maven@4
+  displayName: 'Maven clean and verify'
+  inputs:
+    mavenPomFile: 'pom.xml'
+    goals: 'clean verify "-Dcucumber.options=--tags ~@ECOM_LoginTC_207"'
+
