@@ -12,15 +12,9 @@ import mantisutil.MantisReport;
 import utilities.*;
 
 public class Hooks {
-
-	String imagePath;
-	String pathForLogger;
 	public static String testCaseDescription;
 	public static String executingTagName;
 
-	public static String imagePath1;
-	public static String concatt = ".";
-	
 
 	@Before("@AIEngine")
 	public void beforeMethodAmazon(Scenario scenario) {
@@ -46,7 +40,7 @@ public class Hooks {
 	}
 
 	@After("@AIEngine")
-	public void afterMethodSmoke(Scenario scenario) throws IOException, InterruptedException {
+	public void afterMethodSmoke(Scenario scenario) throws InterruptedException {
 		String testName = scenario.getName().split("_")[0].trim();
 		JavascriptExecutor jse = (JavascriptExecutor) GlobalUtil.getDriver();
 		if (scenario.isFailed()) {
@@ -103,8 +97,6 @@ public class Hooks {
 		}
 		System.out.println("**********************---------------------");
 		System.out.println(GlobalUtil.tags);
-//		jse.executeScript("localStorage.setItem('name','"+GlobalUtil.tags+"' )");
-		jse.executeScript("window.postMessage({ type: 'DOWNLOAD' }, '*');");
 		// close the browsers
 		Thread.sleep(2000);
 		DriverUtil.closeAllDriver();

@@ -24,7 +24,7 @@ import stepDefinitions.Hooks;
 /**
  * The Class ExtentUtil.
  */
-public class ExtentUtil {
+public class ExtentUtil{
 
 	public static ExtentReports extent;
 	public static ExtentSparkReporter spark;
@@ -37,7 +37,7 @@ public class ExtentUtil {
 	 *
 	 * @param filePath
 	 *        the file path
-	 * 
+	 *
 	 * @throws IOException
 	 */
 	public static void extentInit(String filePath) throws IOException {
@@ -52,6 +52,8 @@ public class ExtentUtil {
 		extent.setSystemInfo("Operating System and Version", System.getProperty("os.name"));
 		extent.setSystemInfo("JAVA Version", "JDK " + Runtime.version().toString());
 	}
+
+
 
 	/**
 	 * Start test initialization.

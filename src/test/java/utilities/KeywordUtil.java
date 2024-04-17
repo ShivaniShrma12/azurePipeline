@@ -104,10 +104,12 @@ public class KeywordUtil extends GlobalUtil {
 			}
 		}
 
-		renamedExtentReportName = System.getProperty("user.dir") + "\\"
-				+ ConfigReaderWriter.getValue("extentReportPathToRename").replace("%s", Hooks.executingTagName).replace("@", currentDateTime() + "_");
-		new File(System.getProperty("user.dir") + "\\" + ConfigReaderWriter.getValue("extentReportPath")).renameTo(new File(renamedExtentReportName));
-		String renamedExtentReportPath = renamedExtentReportName;
+//		renamedExtentReportName = System.getProperty("user.dir") + "\\"
+//				+ ConfigReaderWriter.getValue("extentReportPathToRename").replace("%s", Hooks.executingTagName).replace("@", currentDateTime() + "_");
+//		new File(System.getProperty("user.dir") + "\\" + ConfigReaderWriter.getValue("extentReportPath")).renameTo(new File(renamedExtentReportName));
+
+		String renamedExtentReportPath = System.getProperty("user.dir") + "\\"
+				+ ConfigReaderWriter.getValue("extentReportPath");
 		System.out.println("Extent Report File path is: " + renamedExtentReportPath);
 		File extentReport = new File(renamedExtentReportPath);
 		if (extentReport.exists()) {
@@ -117,6 +119,7 @@ public class KeywordUtil extends GlobalUtil {
 				e.printStackTrace();
 			}
 		}
+
 	}
 
 	public static int randomeGenerator(int bound) {
@@ -221,11 +224,6 @@ public class KeywordUtil extends GlobalUtil {
 		return inputValue;
 	}
 
-	/**
-	 * @param locator
-	 * 
-	 * @return
-	 */
 	public static void navigateToUrl(String url) {
 		try {
 			KeywordUtil.lastAction = "Navigate to: " + url;
@@ -440,11 +438,7 @@ public class KeywordUtil extends GlobalUtil {
 	 * Web driver common functions ===========================================================
 	 */
 
-	/**
-	 * @param locator
-	 * 
-	 * @return
-	 */
+
 	//
 	public void highLighterMethod(WebDriver driver, WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;

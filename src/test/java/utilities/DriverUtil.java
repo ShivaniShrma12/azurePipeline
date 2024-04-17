@@ -45,11 +45,7 @@ public class DriverUtil {
 	public static XSSFWorkbook wb;
 	public static XSSFSheet sheet1;
 
-	/**
-	 * @param browserName
-	 * 
-	 * @return
-	 */
+
 	private DriverUtil() {
 
 	}
@@ -140,8 +136,6 @@ public class DriverUtil {
 					if (browser == null) {
 						ChromeOptions options = new ChromeOptions();
 						WebDriverManager.chromedriver().setup();
-						String path = System.getProperty("user.dir")+"\\src\\test\\resources\\TxCapture-LTS\\build";
-						options.addArguments("load-extension="+path);
 						browser = new ChromeDriver(options);
 						drivers.put(CHROME, browser);
 

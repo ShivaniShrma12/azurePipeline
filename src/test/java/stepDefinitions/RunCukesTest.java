@@ -22,7 +22,7 @@ import utilities.KeywordUtil;
 import utilities.LogUtil;
 
 @CucumberOptions(features = "src/test/resources/features", glue = { "stepDefinitions" }, plugin = { "pretty", "html:target/cucumber-html-report.html",
-		"json:target/cucumber.json" }, tags ="@AIEngine", monochrome = true, dryRun = false
+		"json:target/cucumber.json", "junit:target/cucumber.xml" },publish = true, tags ="@Login", monochrome = true, dryRun = false
 
 )
 public class RunCukesTest extends AbstractTestNGCucumberTests {
@@ -52,7 +52,6 @@ public class RunCukesTest extends AbstractTestNGCucumberTests {
 	public void onStart(ITestContext context) {
 		try {
 			ExtentUtil.extentInit(System.getProperty("user.dir") + ConfigReaderWriter.getValue("extentReportPath"));
-
 			// Get all the common setting from excel file that are required for
 			GlobalUtil.setCommonSettings(ExcelDataUtil.getCommonSettings());
 

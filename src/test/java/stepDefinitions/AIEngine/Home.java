@@ -4,7 +4,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import pages.AddToCartPage;
 import pages.HomePage;
@@ -22,8 +21,6 @@ public class Home extends KeywordUtil {
 	public void navigate_to_the_AI_Engine_url() {
 		modules.Home.navigateToTheAIEngineUrl();
 		waitForInVisibile(HomePage.loader);
-		JavascriptExecutor js = (JavascriptExecutor) getDriver();
-		js.executeScript("window.postMessage({ type: 'START' }, '*');");
 	}
 
 	@And("^Click on \"([^\"]*)\" option from Account and list dropdown$")
