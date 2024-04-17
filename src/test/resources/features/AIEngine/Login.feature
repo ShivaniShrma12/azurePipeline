@@ -37,11 +37,11 @@ Feature: Verify Login functionality
       | TestData  |
       | TestCase4 |
 
-#  @ECOM_LoginTC_240
-#  Scenario Outline: Test for the failed scenario
-#    Given Read the test data "<TestData>" from Excel file
-#    When Navigate to the AI Engine url
-#    And Purposely failed step
-#    Examples:
-#      | TestData  |
-#      | TestCase1 |
+  @ECOM_LoginTC_240
+  Scenario Outline: Test for the failed scenario
+    Given Read the test data "<TestData>" from Excel file
+    When Navigate to the AI Engine url
+    And Purposely failed step
+    Examples:
+      | TestData  |
+      | TestCase1 |
