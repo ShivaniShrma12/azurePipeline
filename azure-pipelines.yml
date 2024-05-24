@@ -25,6 +25,8 @@ steps:
     Write-Host "Options: $options"
     Write-Output $options | Out-File -FilePath "$(Build.SourcesDirectory)\maven-options.txt"
   displayName: 'Set Maven options'
+  env:
+    tags: $(tags)
 
 - task: Maven@4
   displayName: 'Maven clean and verify'
