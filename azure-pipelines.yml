@@ -23,15 +23,14 @@ steps:
 
     Write-Host "Options: $options"
     Write-Output $options  # Output options directly as a variable
+    Write-Host "##vso[task.setvariable variable=mavenOptions]$options"  # Set variable for later use
   displayName: 'Set Maven options'
-  name: mavenOptions  # Store the output as a variable named mavenOptions
 
 - task: Maven@4
   displayName: 'Maven clean and verify'
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'clean verify'
-    options: '$(mavenOptions)'  # Pass mavenOptions directly as Maven options
+    options: '$(mavenOptions)'  # Use the stored variable as Maven options
 
 - task: CopyFiles@2
   displayName: 'Copy Cucumber reports'
