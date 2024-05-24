@@ -7,7 +7,7 @@ pool:
 
 variables:
   defaultTag: "@AIEngine"
-  customTags: "[@ECOM_LoginTC_207,@ECOM_LoginTC_231]"
+  customTags: ""
 
 steps:
 - powershell: |
