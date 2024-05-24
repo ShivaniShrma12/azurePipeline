@@ -12,3 +12,22 @@ steps:
     mavenPomFile: 'pom.xml'
     goals: 'clean verify'
     options: '-Dcucumber.filter.tags="@ECOM_LoginTC_207 or @ECOM_LoginTC_231"'
+   
+- task: CopyFiles@2
+  displayName: 'Copy Cucumber reports'
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)/target/cucumber-reports'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/CucumberReports'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Cucumber reports as artifacts'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/CucumberReports'
+    ArtifactName: 'CucumberReports'
+
+- task: PublishPipelineArtifact@1
+  displayName: 'Publish Artifacts'
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)'
+    artifact: 'CucumberReports'
