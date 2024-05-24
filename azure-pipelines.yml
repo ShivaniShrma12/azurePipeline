@@ -4,8 +4,27 @@ trigger:
 pool:
   name: PipelineAgent
   vmImage: ubuntu-latest
+variables:
+  defaultTag: "@AIEngine"
+  customTags: "[@ECOM_LoginTC_207, @ECOM_LoginTC_231]"
 
 steps:
+- powershell: |
+    $tags = "$(tags)"
+    if ($tags -ne "" -and $tags -ne "[]") {
+      if ($tags -like "*[*]") {
+        $tagsList = $tags.Replace(" ", "").Trim("[]")
+        $options = "-Dcucumber.filter.tags=""$tagsList"""
+      } else {
+        $options = "-Dcucumber.filter.tags=""$tags"""
+      }
+    } else {
+      $options = "-Dcucumber.filter.tags=""$(defaultTag)"""
+    }
+    Write-Host "Options: $options"
+    Write-Output $options | Out-File -FilePath "$(Build.SourcesDirectory)\maven-options.txt"
+  displayName: 'Set Maven options'
+
 - task: Maven@4
   displayName: 'Maven clean and verify'
   inputs:
@@ -25,9 +44,3 @@ steps:
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)/CucumberReports'
     ArtifactName: 'CucumberReports'
-
-- task: PublishPipelineArtifact@1
-  displayName: 'Publish Artifacts'
-  inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)'
-    artifact: 'CucumberReports'
