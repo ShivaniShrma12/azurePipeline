@@ -1,27 +1,14 @@
 trigger:
 - main
 
-# Specify the agent pool and agent
 pool:
-  name: 'PipelineAgent'
-
-# Environment variables for Maven settings
-variables:
-  MAVEN_OPTS: "-Xmx1024m"
-  TAGS: "@ECOM_LoginTC_207 or @ECOM_LoginTC_231"
+  name: PipelineAgent
+  vmImage: ubuntu-latest
 
 steps:
-
 - task: Maven@4
+  displayName: 'Maven clean and verify'
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'test'
-    options: '-Dcucumber.filter.tags="$(TAGS)"'
-  displayName: 'Run Selenium Tests with Maven'
+    goals: 'clean verify -Dcucumber.filter.tags="@ECOM_LoginTC_207 or @ECOM_LoginTC_231'
 
-- task: PublishTestResults@2
-  inputs:
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    testRunTitle: 'Cucumber Test Results'
-    mergeTestResults: true
-  displayName: 'Publish Test Results'
