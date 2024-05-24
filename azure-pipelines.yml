@@ -31,8 +31,8 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'clean verify'
-    options: '-Dcucumber.filter.tags="$(mavenOptions)"'  # Use the variable directly in Maven options
-
+  env:
+    MAVEN_OPTS: '-Dcucumber.filter.tags="$(mavenOptions)"'  # Pass mavenOptions as environment variable
    
 - task: CopyFiles@2
   displayName: 'Copy Cucumber reports'
