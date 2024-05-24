@@ -5,15 +5,10 @@ pool:
   name: PipelineAgent
   vmImage: ubuntu-latest
 
-variables:
-  mavenPOMFile: 'pom.xml'
-  options: '-Dcucumber.filter.tags="@ECOM_LoginTC_207 or @ECOM_LoginTC_231'
-
 steps:
-- task: Maven@3
-  displayName: 'Maven pom.xml'
+- task: Maven@4
+  displayName: 'Maven clean and verify'
   inputs:
-    mavenPomFile: '$(Parameters.mavenPOMFile)'
-    goals: 'clean test'
-    options: '$(Parameters.options)'
-    testResultsFiles: '**/surefire-reports/TEST-*.html'
+    mavenPomFile: 'pom.xml'
+    goals: 'clean verify'
+    options: '-Dcucumber.filter.tags="@ECOM_LoginTC_207 or @ECOM_LoginTC_231"'
