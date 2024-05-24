@@ -11,7 +11,10 @@ variables:
 
 steps:
 - powershell: |
-    $tags = "$(tags)"
+    param (
+      [string]$tags
+    )
+
     if ($tags -ne "" -and $tags -ne "[]") {
       if ($tags -like "*[*]") {
         $tagsList = $tags.Replace(" ", "").Trim("[]")
