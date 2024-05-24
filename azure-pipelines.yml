@@ -31,8 +31,8 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'clean verify'
-  env:
-    MAVEN_OPTS: '$(mavenOptions)'  # Pass mavenOptions as environment variable
+    options: '$(mavenOptions)'  # Pass mavenOptions directly as Maven options
+
 - task: CopyFiles@2
   displayName: 'Copy Cucumber reports'
   inputs:
