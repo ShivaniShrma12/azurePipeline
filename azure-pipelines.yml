@@ -18,7 +18,7 @@ steps:
         $options = "-Dcucumber.filter.tags=""$(defaultTag)"""
     } else {
         $tagsString = $tagsArray -join " or "  # Join the tags with " or "
-        $options = '"-Dcucumber.filter.tags=""$tagsString"""'
+        $options = "-Dcucumber.filter.tags=""$tagsString"""
     }
 
     Write-Host "Options: $options"
@@ -30,7 +30,7 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'clean verify'
-    options: $(Build.SourcesDirectory)\maven-options.txt
+    options: '$(Build.SourcesDirectory)\maven-options.txt'
 
 - task: CopyFiles@2
   displayName: 'Copy Cucumber reports'
