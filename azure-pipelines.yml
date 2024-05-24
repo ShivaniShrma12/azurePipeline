@@ -10,5 +10,5 @@ steps:
   displayName: 'Maven clean and verify'
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'clean verify "-Dcucumber.options=--tags ~@ECOM_LoginTC_207"'
+    goals: 'clean verify "-Dcucumber.filter.tags="@ECOM_LoginTC_207 or @ECOM_LoginTC_231"'
 
