@@ -18,7 +18,7 @@ steps:
         $options = "-Dcucumber.filter.tags=""$(defaultTag)"""
     } else {
         $tagsString = $tagsArray -join " or "  # Join the tags with " or "
-        $options = -Dcucumber.filter.tags=""$tagsString""
+        $options = '-Dcucumber.filter.tags=""$tagsString""'
     }
 
     Write-Host "Options: $options"
