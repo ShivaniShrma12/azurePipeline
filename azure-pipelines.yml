@@ -11,25 +11,19 @@ variables:
 
 steps:
 - powershell: |
-    # Access script arguments directly
-    $tags = $args[0]
-
-    if ($tags -ne "" -and $tags -ne "[]") {
-        if ($tags -like "*[*]") {
-            $tagsList = $tags.Replace(" ", "").Trim("[]")
-            $options = "-Dcucumber.filter.tags=""$tagsList"""
-        } else {
-            $options = "-Dcucumber.filter.tags=""$tags"""
-        }
-    } else {
+    $customTags = "$(customTags)"  # Get the customTags variable
+    $tagsArray = $customTags -split ',' | ForEach-Object { $_.Trim('[', ']') }  # Split and trim the tags
+    
+    if ($tagsArray -eq $null -or $tagsArray.Count -eq 0) {
         $options = "-Dcucumber.filter.tags=""$(defaultTag)"""
+    } else {
+        $tagsString = $tagsArray -join " or "  # Join the tags with " or "
+        $options = "-Dcucumber.filter.tags=""$tagsString"""
     }
 
     Write-Host "Options: $options"
     Write-Output $options | Out-File -FilePath "$(Build.SourcesDirectory)\maven-options.txt"
   displayName: 'Set Maven options'
-  env:
-    tags: $(tags)
 
 - task: Maven@4
   displayName: 'Maven clean and verify'
@@ -37,7 +31,7 @@ steps:
     mavenPomFile: 'pom.xml'
     goals: 'clean verify'
     options: $(Build.SourcesDirectory)\maven-options.txt
-   
+
 - task: CopyFiles@2
   displayName: 'Copy Cucumber reports'
   inputs:
