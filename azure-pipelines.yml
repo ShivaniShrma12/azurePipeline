@@ -4,8 +4,6 @@ trigger:
 # Specify the agent pool and agent
 pool:
   name: 'PipelineAgent'
-  demands:
-    - agent.name -equals PipelineAgent
 
 # Environment variables for Maven settings
 variables:
