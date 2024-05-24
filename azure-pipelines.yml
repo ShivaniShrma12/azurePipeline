@@ -15,10 +15,10 @@ steps:
     $tagsArray = $customTags -split ',' | ForEach-Object { $_.Trim('[', ']') }  # Split and trim the tags
     
     if ($tagsArray -eq $null -or $tagsArray.Count -eq 0) {
-        $options = ""  # Empty options if customTags list is empty
+        $options = "$(defaultTag)"
     } else {
         $tagsString = $tagsArray -join " or "  # Join the tags with " or "
-        $options = "$tagsString"
+        $options = "-Dcucumber.filter.tags=""$tagsString"""
     }
 
     Write-Host "Options: $options"
@@ -32,8 +32,7 @@ steps:
     mavenPomFile: 'pom.xml'
     goals: 'clean verify'
   env:
-    MAVEN_OPTS: '-Dcucumber.filter.tags="$(mavenOptions)"'  # Pass mavenOptions as environment variable
- 
+    MAVEN_OPTS: '$(mavenOptions)'  # Pass mavenOptions as environment variable
 - task: CopyFiles@2
   displayName: 'Copy Cucumber reports'
   inputs:
