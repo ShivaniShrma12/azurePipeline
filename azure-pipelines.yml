@@ -5,13 +5,34 @@ pool:
   name: PipelineAgent
   vmImage: ubuntu-latest
 
+variables:
+  defaultTag: "@AIEngine"
+  customTags: "[@ECOM_LoginTC_207,@ECOM_LoginTC_231]"
+
 steps:
+- powershell: |
+    $customTags = "$(customTags)"  # Get the customTags variable
+    $tagsArray = $customTags -split ',' | ForEach-Object { $_.Trim('[', ']') }  # Split and trim the tags
+    
+    if ($tagsArray -eq $null -or $tagsArray.Count -eq 0) {
+        $options = "-Dcucumber.filter.tags=""$(defaultTag)"""
+    } else {
+        $tagsString = $tagsArray -join " or "  # Join the tags with " or "
+        $options = "-Dcucumber.filter.tags=""$tagsString"""
+    }
+
+    Write-Host "Options: $options"
+    Write-Output $options  # Output options directly as a variable
+  displayName: 'Set Maven options'
+  name: mavenOptions  # Store the output as a variable named mavenOptions
+
 - task: Maven@4
   displayName: 'Maven clean and verify'
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'clean verify'
-    options: '-Dcucumber.filter.tags="@ECOM_LoginTC_207 or @ECOM_LoginTC_231"'
+    options: '$(mavenOptions)'  # Use the variable directly in Maven options
+
    
 - task: CopyFiles@2
   displayName: 'Copy Cucumber reports'
