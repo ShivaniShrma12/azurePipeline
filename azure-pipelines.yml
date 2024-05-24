@@ -7,7 +7,7 @@ pool:
 
 variables:
   defaultTag: "@AIEngine"
-  customTags: ""
+  customTags: "[@ECOM_LoginTC_207]"
 
 steps:
 - powershell: |
@@ -16,6 +16,8 @@ steps:
     
     if ($tagsArray -eq $null -or $tagsArray.Count -eq 0) {
         $options = "$(defaultTag)"
+    } elseif ($tagsArray.Count -eq 1) {
+        $options = "-Dcucumber.filter.tags=""$tagsArray"""
     } else {
         $tagsString = $tagsArray -join " or "  # Join the tags with " or "
         $options = "-Dcucumber.filter.tags=""$tagsString"""
