@@ -16,7 +16,7 @@ steps:
 - task: CopyFiles@2
   displayName: 'Copy Cucumber reports'
   inputs:
-    SourceFolder: '$(System.DefaultWorkingDirectory)/target/cucumber-reports'
+    SourceFolder: '$(System.DefaultWorkingDirectory)/ExecutionReports'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)/CucumberReports'
 
