@@ -4,6 +4,7 @@ trigger:
 pool:
   name: PipelineAgent
   vmImage: ubuntu-latest
+
 variables:
   defaultTag: "@AIEngine"
   customTags: "[@ECOM_LoginTC_207, @ECOM_LoginTC_231]"
@@ -30,7 +31,7 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'clean verify'
-    options: '-Dcucumber.filter.tags="@ECOM_LoginTC_207 or @ECOM_LoginTC_231"'
+    options: $(Build.SourcesDirectory)\maven-options.txt
    
 - task: CopyFiles@2
   displayName: 'Copy Cucumber reports'
