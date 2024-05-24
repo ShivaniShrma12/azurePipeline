@@ -11,20 +11,20 @@ variables:
 
 steps:
 - powershell: |
-    param (
-      [string]$tags
-    )
+    # Access script arguments directly
+    $tags = $args[0]
 
     if ($tags -ne "" -and $tags -ne "[]") {
-      if ($tags -like "*[*]") {
-        $tagsList = $tags.Replace(" ", "").Trim("[]")
-        $options = "-Dcucumber.filter.tags=""$tagsList"""
-      } else {
-        $options = "-Dcucumber.filter.tags=""$tags"""
-      }
+        if ($tags -like "*[*]") {
+            $tagsList = $tags.Replace(" ", "").Trim("[]")
+            $options = "-Dcucumber.filter.tags=""$tagsList"""
+        } else {
+            $options = "-Dcucumber.filter.tags=""$tags"""
+        }
     } else {
-      $options = "-Dcucumber.filter.tags=""$(defaultTag)"""
+        $options = "-Dcucumber.filter.tags=""$(defaultTag)"""
     }
+
     Write-Host "Options: $options"
     Write-Output $options | Out-File -FilePath "$(Build.SourcesDirectory)\maven-options.txt"
   displayName: 'Set Maven options'
