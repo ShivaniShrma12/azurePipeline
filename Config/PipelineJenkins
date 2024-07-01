@@ -1,0 +1,101 @@
+pipeline {
+    agent any
+
+    environment {
+        // Hardcoded values (NOT RECOMMENDED for production)
+        GITHUB_CREDENTIALS = '7ded9870-e739-4c7b-818e-302fb602cf9f'
+        UIPATH_CREDENTIALS = '4c5ade42-f0d3-423a-ae5e-e33f1bd4f119'
+        GIT_REPO = 'https://github.com/ShivaniShrma12/azurePipeline.git'
+        GIT_BRANCH = 'sampleForJenkins'
+        WORKSPACE = pwd()
+    }
+
+    triggers {
+        githubPush() // Trigger pipeline on GitHub push
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Checking out code from GitHub...'
+                git credentialsId: env.GITHUB_CREDENTIALS, url: env.GIT_REPO, branch: env.GIT_BRANCH
+            }
+        }
+
+        // stage('Install UiPath Platform') {
+        //     steps {
+        //         echo 'Installing UiPath platform...'
+        //         script {
+        //             // Adjust the CLI version as needed
+        //             def cliVersion = 'WIN_23.2.8467.25277'
+        //             bat "UiPathInstallPlatform cliNupkgPath: '', cliVersion: '${cliVersion}', traceLevel: 'None'"
+        //         }
+        //     }
+        // }
+
+        stage('Pack Project') {
+            steps {
+                echo 'Packing the UiPath project...'
+                script {
+                    UiPathPack (
+                        credentials: Token(accountName: 'testimmetbfx', credentialsId: "${env.UIPATH_CREDENTIALS}"),
+                        disableBuiltInNugetFeeds: false,
+                        orchestratorAddress: 'https://cloud.uipath.com/testimmetbfx/HyperAutomateFrameworkTenant/orchestrator_/',
+                        orchestratorTenant: 'HyperAutomateFrameworkTenant',
+                        outputPath: "${WORKSPACE}\\Output",
+                        outputType: 'Tests',
+                        projectJsonPath: "${WORKSPACE}",
+                        splitOutput: false,
+                        traceLevel: 'Verbose',
+                        useOrchestrator: true,
+                        version: AutoVersion()
+                    )
+                }
+            }
+        }
+
+        stage('Deploy Project') {
+            steps {
+                echo 'Deploying the UiPath project...'
+                script {
+                    UiPathDeploy (
+                        createProcess: true,
+                        credentials: Token(accountName: 'testimmetbfx', credentialsId: "${env.UIPATH_CREDENTIALS}"),
+                        entryPointPaths: 'Main.xaml',
+                        folderName: 'Tx_HyperAutomationProject',
+                        orchestratorAddress: 'https://cloud.uipath.com/testimmetbfx/HyperAutomateFrameworkTenant/orchestrator_/',
+                        orchestratorTenant: 'HyperAutomateFrameworkTenant',
+                        packagePath: "${WORKSPACE}\\Output",
+                        traceLevel: 'Verbose'
+                    )
+                }
+            }
+        }
+
+        stage('Run Test Set') {
+            steps {
+                echo 'Running test set...'
+                script {
+                    UiPathTest (
+                        attachRobotLogs: true,
+                        credentials: Token(accountName: 'testimmetbfx', credentialsId: "${env.UIPATH_CREDENTIALS}"),
+                        disableBuiltInNugetFeeds: false,
+                        folderName: 'Tx_HyperAutomationProject',
+                        orchestratorAddress: 'https://cloud.uipath.com/testimmetbfx/HyperAutomateFrameworkTenant/orchestrator_/',
+                        orchestratorTenant: 'HyperAutomateFrameworkTenant',
+                        testResultsOutputPath: "${WORKSPACE}\\Output",
+                        testTarget: TestSet('SampleTestAutomationWindows'),
+                        traceLevel: 'Verbose'
+                    )
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline completed'
+            // Add any cleanup tasks
+        }
+    }
+}
