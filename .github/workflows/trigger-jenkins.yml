@@ -13,7 +13,7 @@ jobs:
         run: |
           echo "Jenkins URL: ${{ secrets.JENKINS_URL }}"
           echo "Jenkins User: ${{ secrets.JENKINS_USER }}"
-          echo "Jenkins Token Length: ${#{{ secrets.JENKINS_TOKEN }}}"
+          echo "Jenkins Token Length: $(echo -n ${{ secrets.JENKINS_TOKEN }} | wc -c)"
 
       - name: Trigger Jenkins Job
         run: |
