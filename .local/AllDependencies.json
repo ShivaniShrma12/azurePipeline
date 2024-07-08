@@ -19,6 +19,119 @@
           }
         }
       },
+      "Azure.Core/1.20.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
+          "System.Diagnostics.DiagnosticSource": "4.6.0",
+          "System.Memory.Data": "1.0.2",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Text.Encodings.Web": "4.7.2",
+          "System.Text.Json": "4.6.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net5.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Azure.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Data.Tables/12.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.19.0",
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Data.Tables.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Identity/1.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.17.0",
+          "Microsoft.Identity.Client": "4.30.1",
+          "Microsoft.Identity.Client.Extensions.Msal": "2.18.4",
+          "System.Memory": "4.5.4",
+          "System.Security.Cryptography.ProtectedData": "4.5.0",
+          "System.Text.Json": "4.6.0",
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Identity.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Security.KeyVault.Secrets/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.15.0",
+          "System.Memory": "4.5.4",
+          "System.Text.Json": "4.6.0",
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Security.KeyVault.Secrets.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Storage.Blobs/12.10.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Storage.Common": "12.9.0",
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Storage.Blobs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Storage.Common/12.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.19.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Storage.Common.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CsvHelper/16.0.0": {
         "type": "package",
         "dependencies": {
@@ -232,6 +345,639 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll": {}
+        }
+      },
+      "Microsoft.Azure.KeyVault/3.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.KeyVault.WebKey": "3.0.5",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.KeyVault.dll": {}
+        }
+      },
+      "Microsoft.Azure.KeyVault.WebKey/3.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Collections": "4.3.0",
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Net.Http": "4.3.4",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Cng": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.KeyVault.WebKey.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.AppService.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.KeyVault.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Msi.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.AppService.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.BatchAI.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.KeyVault.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.BatchAI.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Cdn.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Cdn.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Compute.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.Graph.RBAC.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Msi.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Network.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Compute.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.ContainerInstance.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.Graph.RBAC.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Msi.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Network.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4",
+          "WindowsAzure.Storage": "9.3.3"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ContainerInstance.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.ContainerRegistry.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ContainerRegistry.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.ContainerService.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ContainerService.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.CosmosDB.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.CosmosDB.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Dns.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Dns.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.EventHub.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4",
+          "WindowsAzure.Storage": "9.3.3"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.EventHub.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.AppService.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.BatchAI.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Cdn.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Compute.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ContainerInstance.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ContainerRegistry.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ContainerService.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.CosmosDB.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Dns.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.EventHub.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Graph.RBAC.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.KeyVault.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Locks.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Monitor.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Msi.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Network.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.PrivateDns.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Redis.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Search.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ServiceBus.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Sql.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.TrafficManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Graph.RBAC.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Graph.RBAC.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.KeyVault.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.KeyVault": "3.0.5",
+          "Microsoft.Azure.Management.Graph.RBAC.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.KeyVault.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Locks.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Locks.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Monitor.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Monitor.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Msi.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.Graph.RBAC.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Msi.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Network/20.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.19, 4.0.0)",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.Management.Network.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Network.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Network.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.PrivateDns.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.PrivateDns.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Redis.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Redis.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.ResourceManager.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure.Authentication": "2.4.1",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4",
+          "System.Net.NetworkInformation": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ResourceManager.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Search.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Search.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.SecurityCenter/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.19, 4.0.0)",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.Management.SecurityCenter.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.ServiceBus.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ServiceBus.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Sql.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4",
+          "WindowsAzure.Storage": "9.3.3"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Sql.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Storage.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Storage.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.TrafficManager.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.TrafficManager.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/3.3.3": {
@@ -568,6 +1314,102 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Identity.Client/4.30.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Microsoft.Identity.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Identity.Client.Extensions.Msal/2.18.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "4.30.0",
+          "System.Security.Cryptography.ProtectedData": "4.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Clients.ActiveDirectory/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "System.Runtime.Serialization.Json": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0",
+          "System.Security.Cryptography.X509Certificates": "4.3.0",
+          "System.Security.SecureString": "4.3.0",
+          "System.Xml.XDocument": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.Tracing": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/5.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "1.1.2",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Tools": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
+          "System.Security.Claims": "4.3.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Csp": "4.3.0",
+          "System.Security.Cryptography.X509Certificates": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {
             "related": ".xml"
           }
         }
@@ -921,21 +1763,39 @@
           }
         }
       },
-      "Microsoft.Rest.ClientRuntime.Azure/3.3.18": {
+      "Microsoft.Rest.ClientRuntime.Azure/3.3.19": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Rest.ClientRuntime": "[2.3.17, 3.0.0)",
-          "NETStandard.Library": "1.6.1",
+          "Microsoft.Rest.ClientRuntime": "[2.3.19, 3.0.0)",
           "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
-          "lib/netstandard1.4/_._": {
+          "lib/netstandard2.0/_._": {
             "related": ".runtimeconfig.json;.xml"
           }
         },
         "runtime": {
-          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.Azure.dll": {
             "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Rest.ClientRuntime.Azure.Authentication/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Clients.ActiveDirectory": "4.3.0",
+          "Microsoft.IdentityModel.Tokens": "5.1.2",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".runtimeconfig.json"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.Azure.Authentication.dll": {
+            "related": ".runtimeconfig.json"
           }
         }
       },
@@ -2413,6 +3273,23 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "System.Memory.Data/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "4.7.2",
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.Data.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Net.Http/4.3.4": {
         "type": "package",
         "dependencies": {
@@ -2476,6 +3353,53 @@
           }
         }
       },
+      "System.Net.NetworkInformation/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.Win32.Primitives": "4.3.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Tracing": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Net.Primitives": "4.3.0",
+          "System.Net.Sockets": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.Handles": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Security.Principal.Windows": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Overlapped": "4.3.0",
+          "System.Threading.Tasks": "4.3.0",
+          "System.Threading.Thread": "4.3.0",
+          "System.Threading.ThreadPool": "4.3.0",
+          "runtime.native.System": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux/lib/netstandard1.3/System.Net.NetworkInformation.dll": {
+            "assetType": "runtime",
+            "rid": "linux"
+          },
+          "runtimes/osx/lib/netstandard1.3/System.Net.NetworkInformation.dll": {
+            "assetType": "runtime",
+            "rid": "osx"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Net.NetworkInformation.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.Net.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2506,6 +3430,15 @@
           }
         }
       },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
       "System.ObjectModel/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2522,6 +3455,42 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.ObjectModel.dll": {}
+        }
+      },
+      "System.Private.DataContractSerialization/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Tasks": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0",
+          "System.Xml.XDocument": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0",
+          "System.Xml.XmlSerializer": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Private.DataContractSerialization.dll": {}
         }
       },
       "System.Private.ServiceModel/4.7.0": {
@@ -2811,6 +3780,37 @@
           "lib/netstandard1.3/System.Runtime.Numerics.dll": {}
         }
       },
+      "System.Runtime.Serialization.Json/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Private.DataContractSerialization": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Runtime.Serialization.Json.dll": {}
+        }
+      },
+      "System.Runtime.Serialization.Primitives/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
+        }
+      },
       "System.Security.AccessControl/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -2832,6 +3832,26 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "System.Security.Claims/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Security.Principal": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Security.Claims.dll": {}
         }
       },
       "System.Security.Cryptography.Algorithms/4.3.0": {
@@ -3124,6 +4144,20 @@
           }
         }
       },
+      "System.Security.Principal/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Security.Principal.dll": {}
+        }
+      },
       "System.Security.Principal.Windows/5.0.0": {
         "type": "package",
         "compile": {
@@ -3142,6 +4176,34 @@
             "rid": "unix"
           },
           "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.SecureString/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Handles": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Security.Cryptography.Primitives": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Threading": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Security.SecureString.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Security.SecureString.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -3324,6 +4386,19 @@
           }
         }
       },
+      "System.Text.Json/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Text.RegularExpressions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3387,6 +4462,30 @@
           }
         }
       },
+      "System.Threading.Overlapped/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Handles": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Threading.Overlapped.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Threading.Overlapped.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.Threading.Tasks/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3420,6 +4519,35 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Threading.Thread/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.Thread.dll": {}
+        }
+      },
+      "System.Threading.ThreadPool/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Handles": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.ThreadPool.dll": {}
         }
       },
       "System.Threading.Timer/4.3.0": {
@@ -3519,6 +4647,59 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "System.Xml.XmlDocument/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
+        }
+      },
+      "System.Xml.XmlSerializer/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
+        }
+      },
       "UiPath/23.10.81.50671": {
         "type": "package",
         "compile": {
@@ -3541,6 +4722,131 @@
         },
         "runtime": {
           "lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll": {}
+        }
+      },
+      "UiPath.Azure.Activities/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.20.0",
+          "Azure.Data.Tables": "12.2.0",
+          "Azure.Identity": "1.4.1",
+          "Azure.Security.KeyVault.Secrets": "4.2.0",
+          "Azure.Storage.Blobs": "12.10.0",
+          "Microsoft.Azure.Management.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Network": "20.6.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.SecurityCenter": "2.1.0",
+          "Newtonsoft.Json": "13.0.1",
+          "UiPath.Telemetry.Client": "1.5.3"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/UiPath.Azure.Activities.Design.dll": {},
+          "lib/net5.0-windows7.0/UiPath.Azure.Activities.dll": {},
+          "lib/net5.0-windows7.0/UiPath.Azure.dll": {}
+        },
+        "resource": {
+          "lib/net5.0-windows7.0/de/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/de/UiPath.Azure.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/de/UiPath.Azure.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.Azure.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.Azure.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.Azure.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.Azure.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.Azure.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.Azure.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.Azure.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.Azure.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.Azure.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.Azure.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.Azure.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.Azure.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.Azure.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.Azure.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.Azure.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.Azure.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.Azure.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.Azure.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.Azure.Activities.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.Azure.resources.dll": {
+            "locale": "zh-CN"
+          }
         }
       },
       "UiPath.CodedWorkflows/23.10.5": {
@@ -4529,6 +5835,23 @@
           "lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll": {},
           "lib/net6.0-windows7.0/UiPath.Vision.dll": {}
         }
+      },
+      "WindowsAzure.Storage/9.3.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.2"
+        },
+        "compile": {
+          "lib/netstandard1.3/_._": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net6.0-windows7.0/win10-x64": {
@@ -4546,6 +5869,119 @@
         "runtime": {
           "lib/netstandard2.0/AutoMapper.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Azure.Core/1.20.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
+          "System.Diagnostics.DiagnosticSource": "4.6.0",
+          "System.Memory.Data": "1.0.2",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Text.Encodings.Web": "4.7.2",
+          "System.Text.Json": "4.6.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net5.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Azure.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Data.Tables/12.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.19.0",
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Data.Tables.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Identity/1.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.17.0",
+          "Microsoft.Identity.Client": "4.30.1",
+          "Microsoft.Identity.Client.Extensions.Msal": "2.18.4",
+          "System.Memory": "4.5.4",
+          "System.Security.Cryptography.ProtectedData": "4.5.0",
+          "System.Text.Json": "4.6.0",
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Identity.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Security.KeyVault.Secrets/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.15.0",
+          "System.Memory": "4.5.4",
+          "System.Text.Json": "4.6.0",
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Security.KeyVault.Secrets.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Storage.Blobs/12.10.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Storage.Common": "12.9.0",
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Storage.Blobs.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Azure.Storage.Common/12.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.19.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Storage.Common.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -4762,6 +6198,639 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll": {}
+        }
+      },
+      "Microsoft.Azure.KeyVault/3.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.KeyVault.WebKey": "3.0.5",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.KeyVault.dll": {}
+        }
+      },
+      "Microsoft.Azure.KeyVault.WebKey/3.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Collections": "4.3.0",
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Net.Http": "4.3.4",
+          "System.Runtime": "4.3.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Cng": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.KeyVault.WebKey.dll": {}
+        }
+      },
+      "Microsoft.Azure.Management.AppService.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.KeyVault.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Msi.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.AppService.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.BatchAI.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.KeyVault.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.BatchAI.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Cdn.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Cdn.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Compute.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.Graph.RBAC.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Msi.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Network.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Compute.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.ContainerInstance.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.Graph.RBAC.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Msi.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Network.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4",
+          "WindowsAzure.Storage": "9.3.3"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ContainerInstance.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.ContainerRegistry.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ContainerRegistry.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.ContainerService.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ContainerService.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.CosmosDB.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.CosmosDB.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Dns.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Dns.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.EventHub.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4",
+          "WindowsAzure.Storage": "9.3.3"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.EventHub.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.AppService.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.BatchAI.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Cdn.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Compute.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ContainerInstance.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ContainerRegistry.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ContainerService.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.CosmosDB.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Dns.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.EventHub.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Graph.RBAC.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.KeyVault.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Locks.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Monitor.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Msi.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Network.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.PrivateDns.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Redis.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Search.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ServiceBus.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Sql.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.TrafficManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Graph.RBAC.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Graph.RBAC.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.KeyVault.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.KeyVault": "3.0.5",
+          "Microsoft.Azure.Management.Graph.RBAC.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.KeyVault.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Locks.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Locks.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Monitor.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Monitor.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Msi.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.Graph.RBAC.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Msi.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Network/20.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.19, 4.0.0)",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.Management.Network.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Network.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Network.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.PrivateDns.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.PrivateDns.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Redis.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Redis.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.ResourceManager.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure.Authentication": "2.4.1",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4",
+          "System.Net.NetworkInformation": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ResourceManager.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Search.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Search.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.SecurityCenter/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.19, 4.0.0)",
+          "Newtonsoft.Json": "10.0.3",
+          "System.Net.Http": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.Management.SecurityCenter.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.ServiceBus.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.ServiceBus.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Sql.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Storage.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4",
+          "WindowsAzure.Storage": "9.3.3"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Sql.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.Storage.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.Storage.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Azure.Management.TrafficManager.Fluent/1.38.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Microsoft.Rest.ClientRuntime.Azure": "[3.3.18, 4.0.0)",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Azure.Management.TrafficManager.Fluent.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/3.3.3": {
@@ -5102,6 +7171,102 @@
           }
         }
       },
+      "Microsoft.Identity.Client/4.30.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Microsoft.Identity.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Identity.Client.Extensions.Msal/2.18.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Identity.Client": "4.30.0",
+          "System.Security.Cryptography.ProtectedData": "4.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Clients.ActiveDirectory/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "System.Runtime.Serialization.Json": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0",
+          "System.Security.Cryptography.X509Certificates": "4.3.0",
+          "System.Security.SecureString": "4.3.0",
+          "System.Xml.XDocument": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.Tracing": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll": {}
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/5.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Logging": "1.1.2",
+          "Newtonsoft.Json": "9.0.1",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Tools": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
+          "System.Security.Claims": "4.3.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Csp": "4.3.0",
+          "System.Security.Cryptography.X509Certificates": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.4/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Management.Infrastructure/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -5312,21 +7477,39 @@
           }
         }
       },
-      "Microsoft.Rest.ClientRuntime.Azure/3.3.18": {
+      "Microsoft.Rest.ClientRuntime.Azure/3.3.19": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Rest.ClientRuntime": "[2.3.17, 3.0.0)",
-          "NETStandard.Library": "1.6.1",
+          "Microsoft.Rest.ClientRuntime": "[2.3.19, 3.0.0)",
           "Newtonsoft.Json": "10.0.3"
         },
         "compile": {
-          "lib/netstandard1.4/_._": {
+          "lib/netstandard2.0/_._": {
             "related": ".runtimeconfig.json;.xml"
           }
         },
         "runtime": {
-          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.Azure.dll": {
             "related": ".runtimeconfig.json;.xml"
+          }
+        }
+      },
+      "Microsoft.Rest.ClientRuntime.Azure.Authentication/2.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Clients.ActiveDirectory": "4.3.0",
+          "Microsoft.IdentityModel.Tokens": "5.1.2",
+          "Microsoft.Rest.ClientRuntime": "[2.3.20, 3.0.0)",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".runtimeconfig.json"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.Azure.Authentication.dll": {
+            "related": ".runtimeconfig.json"
           }
         }
       },
@@ -6855,6 +9038,23 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "System.Memory.Data/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "4.7.2",
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.Data.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Net.Http/4.3.4": {
         "type": "package",
         "dependencies": {
@@ -6932,6 +9132,42 @@
           "runtimes/win/lib/netstandard1.3/System.Net.NameResolution.dll": {}
         }
       },
+      "System.Net.NetworkInformation/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.Win32.Primitives": "4.3.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Tracing": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Net.Primitives": "4.3.0",
+          "System.Net.Sockets": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.Handles": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Security.Principal.Windows": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Overlapped": "4.3.0",
+          "System.Threading.Tasks": "4.3.0",
+          "System.Threading.Thread": "4.3.0",
+          "System.Threading.ThreadPool": "4.3.0",
+          "runtime.native.System": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard1.3/System.Net.NetworkInformation.dll": {}
+        }
+      },
       "System.Net.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -6964,6 +9200,15 @@
           }
         }
       },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
       "System.ObjectModel/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -6980,6 +9225,42 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.ObjectModel.dll": {}
+        }
+      },
+      "System.Private.DataContractSerialization/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Tasks": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0",
+          "System.Xml.XDocument": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0",
+          "System.Xml.XmlSerializer": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Private.DataContractSerialization.dll": {}
         }
       },
       "System.Private.ServiceModel/4.7.0": {
@@ -7272,6 +9553,37 @@
           "lib/netstandard1.3/System.Runtime.Numerics.dll": {}
         }
       },
+      "System.Runtime.Serialization.Json/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Private.DataContractSerialization": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Runtime.Serialization.Json.dll": {}
+        }
+      },
+      "System.Runtime.Serialization.Primitives/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
+        }
+      },
       "System.Security.AccessControl/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -7287,6 +9599,26 @@
           "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Security.Claims/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Security.Principal": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Security.Claims.dll": {}
         }
       },
       "System.Security.Cryptography.Algorithms/4.3.0": {
@@ -7523,6 +9855,20 @@
           }
         }
       },
+      "System.Security.Principal/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Security.Principal.dll": {}
+        }
+      },
       "System.Security.Principal.Windows/5.0.0": {
         "type": "package",
         "compile": {
@@ -7534,6 +9880,27 @@
           "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Security.SecureString/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Handles": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Security.Cryptography.Primitives": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Threading": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard1.3/System.Security.SecureString.dll": {}
         }
       },
       "System.ServiceModel.Duplex/4.7.0": {
@@ -7703,6 +10070,19 @@
           }
         }
       },
+      "System.Text.Json/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Text.RegularExpressions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -7813,6 +10193,35 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "System.Threading.Thread/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.Thread.dll": {}
+        }
+      },
+      "System.Threading.ThreadPool/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Handles": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.ThreadPool.dll": {}
+        }
+      },
       "System.Threading.Timer/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -7905,6 +10314,59 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "System.Xml.XmlDocument/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
+        }
+      },
+      "System.Xml.XmlSerializer/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
+        }
+      },
       "UiPath/23.10.81.50671": {
         "type": "package",
         "compile": {
@@ -7927,6 +10389,131 @@
         },
         "runtime": {
           "lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll": {}
+        }
+      },
+      "UiPath.Azure.Activities/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.20.0",
+          "Azure.Data.Tables": "12.2.0",
+          "Azure.Identity": "1.4.1",
+          "Azure.Security.KeyVault.Secrets": "4.2.0",
+          "Azure.Storage.Blobs": "12.10.0",
+          "Microsoft.Azure.Management.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.Network": "20.6.0",
+          "Microsoft.Azure.Management.ResourceManager.Fluent": "1.38.0",
+          "Microsoft.Azure.Management.SecurityCenter": "2.1.0",
+          "Newtonsoft.Json": "13.0.1",
+          "UiPath.Telemetry.Client": "1.5.3"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/UiPath.Azure.Activities.Design.dll": {},
+          "lib/net5.0-windows7.0/UiPath.Azure.Activities.dll": {},
+          "lib/net5.0-windows7.0/UiPath.Azure.dll": {}
+        },
+        "resource": {
+          "lib/net5.0-windows7.0/de/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/de/UiPath.Azure.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/de/UiPath.Azure.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.Azure.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.Azure.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.Azure.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.Azure.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.Azure.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.Azure.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.Azure.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.Azure.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.Azure.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.Azure.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.Azure.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.Azure.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.Azure.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.Azure.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.Azure.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.Azure.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.Azure.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.Azure.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.Azure.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.Azure.Activities.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.Azure.resources.dll": {
+            "locale": "zh-CN"
+          }
         }
       },
       "UiPath.CodedWorkflows/23.10.5": {
@@ -8915,6 +11502,23 @@
           "lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll": {},
           "lib/net6.0-windows7.0/UiPath.Vision.dll": {}
         }
+      },
+      "WindowsAzure.Storage/9.3.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.2"
+        },
+        "compile": {
+          "lib/netstandard1.3/_._": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     }
   },
@@ -8934,6 +11538,108 @@
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.pdb",
         "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "Azure.Core/1.20.0": {
+      "sha512": "q7xigZIBjLjSKJA/Y+VygmJ2iZGiEyNuicN5iRX9oJL7451SulZm/CQ7qd8YCeL5TgNCNYCIrTIqRaams95zHA==",
+      "type": "package",
+      "path": "azure.core/1.20.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.core.1.20.0.nupkg.sha512",
+        "azure.core.nuspec",
+        "lib/net461/Azure.Core.dll",
+        "lib/net461/Azure.Core.xml",
+        "lib/net5.0/Azure.Core.dll",
+        "lib/net5.0/Azure.Core.xml",
+        "lib/netcoreapp2.1/Azure.Core.dll",
+        "lib/netcoreapp2.1/Azure.Core.xml",
+        "lib/netstandard2.0/Azure.Core.dll",
+        "lib/netstandard2.0/Azure.Core.xml",
+        "pkgicon.png"
+      ]
+    },
+    "Azure.Data.Tables/12.2.0": {
+      "sha512": "gdCU9m81DV9p+0sHDfAwmF5rnmHLeBHNnsMbusgYhQzhuPl8ONXsHu8BsICpR26rygVxsiWZynIgwMRP29tr8g==",
+      "type": "package",
+      "path": "azure.data.tables/12.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.data.tables.12.2.0.nupkg.sha512",
+        "azure.data.tables.nuspec",
+        "lib/netstandard2.0/Azure.Data.Tables.dll",
+        "lib/netstandard2.0/Azure.Data.Tables.xml",
+        "pkgicon.png"
+      ]
+    },
+    "Azure.Identity/1.4.1": {
+      "sha512": "yuxWej20CUtK2HUU4jm9Vft1wPw2NWKpwS9Zr0hJyph0dp7vgihlzlujR26UdhmvgdMdswsFRZL+k0HcaS07tw==",
+      "type": "package",
+      "path": "azure.identity/1.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.identity.1.4.1.nupkg.sha512",
+        "azure.identity.nuspec",
+        "lib/netstandard2.0/Azure.Identity.dll",
+        "lib/netstandard2.0/Azure.Identity.xml",
+        "pkgicon.png"
+      ]
+    },
+    "Azure.Security.KeyVault.Secrets/4.2.0": {
+      "sha512": "ujVMKVzEtVNQom5A0iEXSDovNGoSidV0RO5QlOBFfcIZlXwFnBmO5OhOfS4D/F1gbMNCCFS3re39qd/Bgh6+QQ==",
+      "type": "package",
+      "path": "azure.security.keyvault.secrets/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.security.keyvault.secrets.4.2.0.nupkg.sha512",
+        "azure.security.keyvault.secrets.nuspec",
+        "lib/netstandard2.0/Azure.Security.KeyVault.Secrets.dll",
+        "lib/netstandard2.0/Azure.Security.KeyVault.Secrets.xml",
+        "pkgicon.png"
+      ]
+    },
+    "Azure.Storage.Blobs/12.10.0": {
+      "sha512": "yaijs9DPfn34C/X4TX+0TAxANEhuKSrFE650gkF9g1pz/nQljv86zOOtDwNwD5UsAY5LyrOiCASGo2dhuIxvdg==",
+      "type": "package",
+      "path": "azure.storage.blobs/12.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.storage.blobs.12.10.0.nupkg.sha512",
+        "azure.storage.blobs.nuspec",
+        "lib/netstandard2.0/Azure.Storage.Blobs.dll",
+        "lib/netstandard2.0/Azure.Storage.Blobs.xml",
+        "pkgicon.png"
+      ]
+    },
+    "Azure.Storage.Common/12.9.0": {
+      "sha512": "GuoigTmzz9HrCGdcdu7LyjD4pDr2XPt72LlWWTDyno+nYrjyuNwpwRFBvK/brxJvQFRHofQcBskf8vOxVxnI8g==",
+      "type": "package",
+      "path": "azure.storage.common/12.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.storage.common.12.9.0.nupkg.sha512",
+        "azure.storage.common.nuspec",
+        "lib/netstandard2.0/Azure.Storage.Common.dll",
+        "lib/netstandard2.0/Azure.Storage.Common.xml",
+        "pkgicon.png"
       ]
     },
     "CsvHelper/16.0.0": {
@@ -9172,6 +11878,537 @@
         "microsoft.azure.cognitiveservices.vision.computervision.7.0.1.nupkg.sha512",
         "microsoft.azure.cognitiveservices.vision.computervision.nuspec",
         "pkgicon.png"
+      ]
+    },
+    "Microsoft.Azure.KeyVault/3.0.5": {
+      "sha512": "hbWw44JCJhk7e+CFeqSD1iQ2k4MP6bVVahEd9Cd1OP6JNyy0Y/S+9almtadH3vUoeDQsBAoQmzGImNoK3gxpog==",
+      "type": "package",
+      "path": "microsoft.azure.keyvault/3.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net452/Microsoft.Azure.KeyVault.dll",
+        "lib/net461/Microsoft.Azure.KeyVault.dll",
+        "lib/netstandard1.4/Microsoft.Azure.KeyVault.dll",
+        "lib/netstandard2.0/Microsoft.Azure.KeyVault.dll",
+        "microsoft.azure.keyvault.3.0.5.nupkg.sha512",
+        "microsoft.azure.keyvault.nuspec",
+        "pkgicon.png"
+      ]
+    },
+    "Microsoft.Azure.KeyVault.WebKey/3.0.5": {
+      "sha512": "LmvQxr3qaK1rEMcsQCIz88T4LT6Mskd3mS425iXGFargt/FHS/p4lT++gBlsB3IZyU/opM7v8Yruzp13xu/I8g==",
+      "type": "package",
+      "path": "microsoft.azure.keyvault.webkey/3.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.KeyVault.WebKey.dll",
+        "lib/net461/Microsoft.Azure.KeyVault.WebKey.dll",
+        "lib/netstandard1.4/Microsoft.Azure.KeyVault.WebKey.dll",
+        "lib/netstandard2.0/Microsoft.Azure.KeyVault.WebKey.dll",
+        "microsoft.azure.keyvault.webkey.3.0.5.nupkg.sha512",
+        "microsoft.azure.keyvault.webkey.nuspec",
+        "pkgicon.png"
+      ]
+    },
+    "Microsoft.Azure.Management.AppService.Fluent/1.38.0": {
+      "sha512": "Nb8PC9x8Pbgb8+eSn/x6vwNn2lsLMSK9HT9lBBWFfaEZPMysMa4XweDfNjgxUSVe3YnfcsDIwzY8NZi7thz2Nw==",
+      "type": "package",
+      "path": "microsoft.azure.management.appservice.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.AppService.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.AppService.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.AppService.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.AppService.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.AppService.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.AppService.Fluent.xml",
+        "microsoft.azure.management.appservice.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.appservice.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.BatchAI.Fluent/1.38.0": {
+      "sha512": "XFl1XlQroa6g3IXQBw8DAuBBFhG29fp752meuyWvG9ZCQ/K+5YsxeZVNbcjB4RTQnSTVqxrdRe+7+M/2q8hw+g==",
+      "type": "package",
+      "path": "microsoft.azure.management.batchai.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.BatchAI.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.BatchAI.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.BatchAI.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.BatchAI.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.BatchAI.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.BatchAI.Fluent.xml",
+        "microsoft.azure.management.batchai.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.batchai.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.Cdn.Fluent/1.38.0": {
+      "sha512": "YEy17SLuTCjiza0UxiSUOIN/51NPvhGw6R2CL69wO6tvoNrtMj6luNPO9wJt+o985tOnW0lRqJIRMPXv2k8E4w==",
+      "type": "package",
+      "path": "microsoft.azure.management.cdn.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.Cdn.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.Cdn.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.Cdn.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Cdn.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Cdn.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Cdn.Fluent.xml",
+        "microsoft.azure.management.cdn.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.cdn.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.Compute.Fluent/1.38.0": {
+      "sha512": "BZ6ACxlfn2vWjPwFHI/wn3bVPGmbj36ll3SJjqqDCbPOJ1AvY943SIVYE4ZB7ej4vG17xPxcYdS5QW3qVLtxcA==",
+      "type": "package",
+      "path": "microsoft.azure.management.compute.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.Compute.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.Compute.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.Compute.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Compute.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Compute.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Compute.Fluent.xml",
+        "microsoft.azure.management.compute.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.compute.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.ContainerInstance.Fluent/1.38.0": {
+      "sha512": "73JG+Tc9erX1onAlEmGH8JwG1INjU3ywHTfEJgfn6NU3ub7XzFZzi2BJFwxMP2W8Lc9KQhFgawnqNjDBuQHLMA==",
+      "type": "package",
+      "path": "microsoft.azure.management.containerinstance.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.ContainerInstance.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.ContainerInstance.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.ContainerInstance.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ContainerInstance.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ContainerInstance.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ContainerInstance.Fluent.xml",
+        "microsoft.azure.management.containerinstance.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.containerinstance.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.ContainerRegistry.Fluent/1.38.0": {
+      "sha512": "6zNJdviRfrADYVv+PUc+K43QcQcdiG13J8/g38hPIW0VmRSZTS2RtD02NNqrCTX5rgTQ4HiXQpghIAiA9+yaoA==",
+      "type": "package",
+      "path": "microsoft.azure.management.containerregistry.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.ContainerRegistry.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.ContainerRegistry.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.ContainerRegistry.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ContainerRegistry.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ContainerRegistry.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ContainerRegistry.Fluent.xml",
+        "microsoft.azure.management.containerregistry.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.containerregistry.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.ContainerService.Fluent/1.38.0": {
+      "sha512": "/maplwSftq82pwnOIZUiFe6kewntVZPO3NKqJU1X6qsbku2JvkDmDYyMS26x2Ny1g9mRIiNy7MN5BHXuainnUg==",
+      "type": "package",
+      "path": "microsoft.azure.management.containerservice.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.ContainerService.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.ContainerService.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.ContainerService.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ContainerService.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ContainerService.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ContainerService.Fluent.xml",
+        "microsoft.azure.management.containerservice.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.containerservice.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.CosmosDB.Fluent/1.38.0": {
+      "sha512": "UaiM5lSWZqDwTbZDErRXpUcZ6pzpk5Rqo1ldvl+Go93Qc3bYb40VAS7eM3z6LVp0OOANAtzAjFOR9Y9UKPyJJA==",
+      "type": "package",
+      "path": "microsoft.azure.management.cosmosdb.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.CosmosDB.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.CosmosDB.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.CosmosDB.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.CosmosDB.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.CosmosDB.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.CosmosDB.Fluent.xml",
+        "microsoft.azure.management.cosmosdb.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.cosmosdb.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.Dns.Fluent/1.38.0": {
+      "sha512": "ZCAnlMuHfl8ywYCpLI3uAJj+EIVTk65QxmFCnhNcwYTbv6+47cBtx01hYERl5QgRGhnCMfV+GCLCAekPfC1PcA==",
+      "type": "package",
+      "path": "microsoft.azure.management.dns.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.Dns.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.Dns.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.Dns.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Dns.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Dns.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Dns.Fluent.xml",
+        "microsoft.azure.management.dns.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.dns.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.EventHub.Fluent/1.38.0": {
+      "sha512": "wNVQnsTkuYhAf3HIC68g4U94chpQmtiMdlwZV5bhe8xAGcPm4FxFVhaVPFW8WvArMcubaItGcCcmiKXDCo8Lpw==",
+      "type": "package",
+      "path": "microsoft.azure.management.eventhub.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.EventHub.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.EventHub.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.EventHub.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.EventHub.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.EventHub.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.EventHub.Fluent.xml",
+        "microsoft.azure.management.eventhub.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.eventhub.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.Fluent/1.38.0": {
+      "sha512": "ij2qbPUliWCufjmX3+ayZisW7+BklBFr8JY6gA+6xReckEORerAwAZHz54kMBKHk8qnAsgYGtMBLJKB45AfMMQ==",
+      "type": "package",
+      "path": "microsoft.azure.management.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Fluent.xml",
+        "microsoft.azure.management.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.Graph.RBAC.Fluent/1.38.0": {
+      "sha512": "DtB++2ZeZ+2KsNe6dQ3O9eoCGXjJTiRIx+elivCvnjAJEWSa3tzEWzHHtKIR2IHnh4Po6WxbYDmAj9oxpYEpMw==",
+      "type": "package",
+      "path": "microsoft.azure.management.graph.rbac.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.Graph.RBAC.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.Graph.RBAC.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.Graph.RBAC.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Graph.RBAC.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Graph.RBAC.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Graph.RBAC.Fluent.xml",
+        "microsoft.azure.management.graph.rbac.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.graph.rbac.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.KeyVault.Fluent/1.38.0": {
+      "sha512": "aeSHt2LIjKKOh9pLWWA67dUsRtkdAWOk0s/X9/g6txDmebmJyLolsVB+3/Xg23M9T1q6hto9QkUHZHMfOgz6jQ==",
+      "type": "package",
+      "path": "microsoft.azure.management.keyvault.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.KeyVault.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.KeyVault.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.KeyVault.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.KeyVault.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.KeyVault.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.KeyVault.Fluent.xml",
+        "microsoft.azure.management.keyvault.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.keyvault.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.Locks.Fluent/1.38.0": {
+      "sha512": "8HG81H/R20X/gc0S/bV8qsn4HsYn4JN/BjLEQgNNF8F8QgSUGcokMyfnf/bGfyQdu1rZAI2OH7/e75nVk4CLvQ==",
+      "type": "package",
+      "path": "microsoft.azure.management.locks.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.Locks.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.Locks.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.Locks.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Locks.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Locks.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Locks.Fluent.xml",
+        "microsoft.azure.management.locks.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.locks.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.Monitor.Fluent/1.38.0": {
+      "sha512": "Q0QWWvohRFj2cmo5BL8CvIm2JBpfdBU2corLOee4rY8IziplauICidvHtI0HURIthR4cAAoVAkSbdXV0F5kKoQ==",
+      "type": "package",
+      "path": "microsoft.azure.management.monitor.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.Monitor.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.Monitor.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.Monitor.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Monitor.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Monitor.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Monitor.Fluent.xml",
+        "microsoft.azure.management.monitor.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.monitor.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.Msi.Fluent/1.38.0": {
+      "sha512": "pqkhm3JQ+u/lvz4xuWqWrvT3cixzNZukyMo20Qv2trLr0xx6iBGNycjEVlgRKxnbAotje2V26yb9H7jd7pLytQ==",
+      "type": "package",
+      "path": "microsoft.azure.management.msi.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.Msi.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.Msi.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.Msi.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Msi.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Msi.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Msi.Fluent.xml",
+        "microsoft.azure.management.msi.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.msi.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.Network/20.6.0": {
+      "sha512": "mJi2yI3P85VrJvWO0p46UdqlaiQ4fBlkwaSPKUXdF6Ly8ReArpcmlbdk6qY7m69q5RKTj//UpUTC7YJZd/g7Yg==",
+      "type": "package",
+      "path": "microsoft.azure.management.network/20.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.Network.dll",
+        "lib/net452/Microsoft.Azure.Management.Network.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.Network.xml",
+        "lib/net461/Microsoft.Azure.Management.Network.dll",
+        "lib/net461/Microsoft.Azure.Management.Network.runtimeconfig.json",
+        "lib/net461/Microsoft.Azure.Management.Network.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Network.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Network.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Network.xml",
+        "lib/netstandard2.0/Microsoft.Azure.Management.Network.dll",
+        "lib/netstandard2.0/Microsoft.Azure.Management.Network.runtimeconfig.json",
+        "lib/netstandard2.0/Microsoft.Azure.Management.Network.xml",
+        "microsoft.azure.management.network.20.6.0.nupkg.sha512",
+        "microsoft.azure.management.network.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.Network.Fluent/1.38.0": {
+      "sha512": "al+s+3NxDFvcbjk3HamixX1R0hzHVuUsN75o3Pn6jihtk577t1+Jc1+RueRS/zOgsK+00/43DgFan4dQe8kMFg==",
+      "type": "package",
+      "path": "microsoft.azure.management.network.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.Network.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.Network.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.Network.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Network.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Network.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Network.Fluent.xml",
+        "microsoft.azure.management.network.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.network.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.PrivateDns.Fluent/1.38.0": {
+      "sha512": "q9/mCVGyGuyfx7DhtFefLak6M+qVKpZXpwAcUEUKzc2mmKg+WQiINw7LAUSO3EEGJZ3//nhG860BuZwx+62jmw==",
+      "type": "package",
+      "path": "microsoft.azure.management.privatedns.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.PrivateDns.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.PrivateDns.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.PrivateDns.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.PrivateDns.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.PrivateDns.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.PrivateDns.Fluent.xml",
+        "microsoft.azure.management.privatedns.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.privatedns.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.Redis.Fluent/1.38.0": {
+      "sha512": "lyt6FMzGtaSNMtEB0d0zjldnWYohxgQykdxVkl64RMlF/Uuj9NNf2VB3MNOTvSKCCe8l1XDRmJcoE9iispgBvw==",
+      "type": "package",
+      "path": "microsoft.azure.management.redis.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.Redis.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.Redis.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.Redis.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Redis.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Redis.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Redis.Fluent.xml",
+        "microsoft.azure.management.redis.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.redis.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.ResourceManager.Fluent/1.38.0": {
+      "sha512": "5Rlk3nPPg+xHno1a4/FoDOy8ZiJwnLvo91MPfq77QKQtVtAvriH9UDViNwzKszl8krU+9jmzxpXDGcbjeA0Nlw==",
+      "type": "package",
+      "path": "microsoft.azure.management.resourcemanager.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.ResourceManager.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.ResourceManager.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.ResourceManager.Fluent.xml",
+        "lib/net461/Microsoft.Azure.Management.ResourceManager.Fluent.dll",
+        "lib/net461/Microsoft.Azure.Management.ResourceManager.Fluent.runtimeconfig.json",
+        "lib/net461/Microsoft.Azure.Management.ResourceManager.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ResourceManager.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ResourceManager.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ResourceManager.Fluent.xml",
+        "microsoft.azure.management.resourcemanager.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.resourcemanager.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.Search.Fluent/1.38.0": {
+      "sha512": "Fmho2NZBLR/qnHNWoF1lKkd2OBmvO+HC5RPLKHaGB6c0cjTVK1DpM3ibs6TXWftCKaapa8a5B1rZP1EixHjq0g==",
+      "type": "package",
+      "path": "microsoft.azure.management.search.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.Search.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.Search.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.Search.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Search.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Search.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Search.Fluent.xml",
+        "microsoft.azure.management.search.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.search.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.SecurityCenter/2.1.0": {
+      "sha512": "/zICzuF/1WXPG93clxr7yP7182OoyW2tVub98rktgeIhoR4/NrgHXAtCYM35OKeLkjnGLVBAWTV1s4pQGT5RGQ==",
+      "type": "package",
+      "path": "microsoft.azure.management.securitycenter/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.SecurityCenter.dll",
+        "lib/net452/Microsoft.Azure.Management.SecurityCenter.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.SecurityCenter.xml",
+        "lib/net461/Microsoft.Azure.Management.SecurityCenter.dll",
+        "lib/net461/Microsoft.Azure.Management.SecurityCenter.runtimeconfig.json",
+        "lib/net461/Microsoft.Azure.Management.SecurityCenter.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.SecurityCenter.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.SecurityCenter.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.SecurityCenter.xml",
+        "lib/netstandard2.0/Microsoft.Azure.Management.SecurityCenter.dll",
+        "lib/netstandard2.0/Microsoft.Azure.Management.SecurityCenter.runtimeconfig.json",
+        "lib/netstandard2.0/Microsoft.Azure.Management.SecurityCenter.xml",
+        "microsoft.azure.management.securitycenter.2.1.0.nupkg.sha512",
+        "microsoft.azure.management.securitycenter.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.ServiceBus.Fluent/1.38.0": {
+      "sha512": "jyzej4D3lmt5JZRZ8zN0RAAKBobgzQBw1igwfFkpJpFvXQYRWRTTJohMwe8t6ziqQnb1PxZY4/ZNpDkENDHXng==",
+      "type": "package",
+      "path": "microsoft.azure.management.servicebus.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.ServiceBus.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.ServiceBus.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.ServiceBus.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ServiceBus.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ServiceBus.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.ServiceBus.Fluent.xml",
+        "microsoft.azure.management.servicebus.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.servicebus.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.Sql.Fluent/1.38.0": {
+      "sha512": "c17KQ4b2gDe8T/UKK04992wMaoe82gmdncnKxcmW+C9s4jXvnlV7kEa+FTsVlUf7clQV+15Nmm17a/OLC6FY9Q==",
+      "type": "package",
+      "path": "microsoft.azure.management.sql.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.Sql.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.Sql.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.Sql.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Sql.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Sql.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Sql.Fluent.xml",
+        "microsoft.azure.management.sql.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.sql.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.Storage.Fluent/1.38.0": {
+      "sha512": "cq09FEZ8ubSv2OnEPIqab5uAbg6vu7h+CokWHK2PXgMr3r51yQbFdPGLL2DyKxbTAF1wFvYryxKL5wc+uiCcZQ==",
+      "type": "package",
+      "path": "microsoft.azure.management.storage.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.Storage.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.Storage.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.Storage.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Storage.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Storage.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.Storage.Fluent.xml",
+        "microsoft.azure.management.storage.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.storage.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Management.TrafficManager.Fluent/1.38.0": {
+      "sha512": "fqs2rqBidPHY+eWgeZebWd6+V34ldQB3GfsFkLTaUWH62sbTnieI0WkfjRO9s4aupXQnKkQj0KPteSLm9z3K1g==",
+      "type": "package",
+      "path": "microsoft.azure.management.trafficmanager.fluent/1.38.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Azure.Management.TrafficManager.Fluent.dll",
+        "lib/net452/Microsoft.Azure.Management.TrafficManager.Fluent.runtimeconfig.json",
+        "lib/net452/Microsoft.Azure.Management.TrafficManager.Fluent.xml",
+        "lib/netstandard1.4/Microsoft.Azure.Management.TrafficManager.Fluent.dll",
+        "lib/netstandard1.4/Microsoft.Azure.Management.TrafficManager.Fluent.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Azure.Management.TrafficManager.Fluent.xml",
+        "microsoft.azure.management.trafficmanager.fluent.1.38.0.nupkg.sha512",
+        "microsoft.azure.management.trafficmanager.fluent.nuspec"
+      ]
+    },
+    "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
+      "sha512": "K63Y4hORbBcKLWH5wnKgzyn7TOfYzevIEwIedQHBIkmkEBA9SCqgvom+XTuE+fAFGvINGkhFItaZ2dvMGdT5iw==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/3.3.3": {
@@ -9789,6 +13026,107 @@
         "microsoft.extensions.primitives.nuspec"
       ]
     },
+    "Microsoft.Identity.Client/4.30.1": {
+      "sha512": "xk8tJeGfB2yD3+d7a0DXyV7/HYyEG10IofUHYHoPYKmDbroi/j9t1BqSHgbq1nARDjg7m8Ki6e21AyNU7e/R4Q==",
+      "type": "package",
+      "path": "microsoft.identity.client/4.30.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/Microsoft.Identity.Client.dll",
+        "lib/monoandroid10.0/Microsoft.Identity.Client.xml",
+        "lib/monoandroid90/Microsoft.Identity.Client.dll",
+        "lib/monoandroid90/Microsoft.Identity.Client.xml",
+        "lib/net45/Microsoft.Identity.Client.dll",
+        "lib/net45/Microsoft.Identity.Client.xml",
+        "lib/net461/Microsoft.Identity.Client.dll",
+        "lib/net461/Microsoft.Identity.Client.xml",
+        "lib/net5.0-windows10.0.17763/Microsoft.Identity.Client.dll",
+        "lib/net5.0-windows10.0.17763/Microsoft.Identity.Client.xml",
+        "lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
+        "lib/netcoreapp2.1/Microsoft.Identity.Client.xml",
+        "lib/netstandard1.3/Microsoft.Identity.Client.dll",
+        "lib/netstandard1.3/Microsoft.Identity.Client.xml",
+        "lib/uap10.0/Microsoft.Identity.Client.dll",
+        "lib/uap10.0/Microsoft.Identity.Client.pri",
+        "lib/uap10.0/Microsoft.Identity.Client.xml",
+        "lib/xamarinios10/Microsoft.Identity.Client.dll",
+        "lib/xamarinios10/Microsoft.Identity.Client.xml",
+        "lib/xamarinmac20/Microsoft.Identity.Client.dll",
+        "lib/xamarinmac20/Microsoft.Identity.Client.xml",
+        "microsoft.identity.client.4.30.1.nupkg.sha512",
+        "microsoft.identity.client.nuspec"
+      ]
+    },
+    "Microsoft.Identity.Client.Extensions.Msal/2.18.4": {
+      "sha512": "HpG4oLwhQsy0ce7OWq9iDdLtJKOvKRStIKoSEOeBMKuohfuOWNDyhg8fMAJkpG/kFeoe4J329fiMHcJmmB+FPw==",
+      "type": "package",
+      "path": "microsoft.identity.client.extensions.msal/2.18.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.Identity.Client.Extensions.Msal.dll",
+        "lib/net45/Microsoft.Identity.Client.Extensions.Msal.xml",
+        "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll",
+        "lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.xml",
+        "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.dll",
+        "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.xml",
+        "microsoft.identity.client.extensions.msal.2.18.4.nupkg.sha512",
+        "microsoft.identity.client.extensions.msal.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Clients.ActiveDirectory/4.3.0": {
+      "sha512": "IRXnTCHxwnpnGBHVnTWd8RBJk7nsBsNZVl8j20kh234bP+oBILkt+6Iw5vQg5Q+sZmALt3Oq6X3Kx7qY71XyVw==",
+      "type": "package",
+      "path": "microsoft.identitymodel.clients.activedirectory/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid81/Microsoft.IdentityModel.Clients.ActiveDirectory.dll",
+        "lib/monoandroid81/Microsoft.IdentityModel.Clients.ActiveDirectory.xml",
+        "lib/net45/Microsoft.IdentityModel.Clients.ActiveDirectory.dll",
+        "lib/net45/Microsoft.IdentityModel.Clients.ActiveDirectory.xml",
+        "lib/netstandard1.1/Microsoft.IdentityModel.Clients.ActiveDirectory.dll",
+        "lib/netstandard1.1/Microsoft.IdentityModel.Clients.ActiveDirectory.xml",
+        "lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.dll",
+        "lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.xml",
+        "lib/uap10.0/Microsoft.IdentityModel.Clients.ActiveDirectory.dll",
+        "lib/uap10.0/Microsoft.IdentityModel.Clients.ActiveDirectory.pri",
+        "lib/uap10.0/Microsoft.IdentityModel.Clients.ActiveDirectory.xml",
+        "lib/xamarinios10/Microsoft.IdentityModel.Clients.ActiveDirectory.dll",
+        "lib/xamarinios10/Microsoft.IdentityModel.Clients.ActiveDirectory.xml",
+        "microsoft.identitymodel.clients.activedirectory.4.3.0.nupkg.sha512",
+        "microsoft.identitymodel.clients.activedirectory.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Logging/1.1.2": {
+      "sha512": "QPMFfRVnRkCzGpEQz/YEPsbwUjAp5R1W2dpaXHlJJNA7fp9gV4m4TDKvvXhQnqdEL0a0luNrYFZrbz7NRI1rXQ==",
+      "type": "package",
+      "path": "microsoft.identitymodel.logging/1.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/Microsoft.IdentityModel.Logging.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll",
+        "microsoft.identitymodel.logging.1.1.2.nupkg.sha512",
+        "microsoft.identitymodel.logging.nuspec"
+      ]
+    },
+    "Microsoft.IdentityModel.Tokens/5.1.2": {
+      "sha512": "m7UP4iY/dWfVwDNNSVGvZV6r4PwflaK++sYQsTTGAMILYb5IJ4Z4rKJRCA0uKjo6jTcdWlQxyPsxoEVwjqPKqQ==",
+      "type": "package",
+      "path": "microsoft.identitymodel.tokens/5.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/Microsoft.IdentityModel.Tokens.dll",
+        "lib/net451/Microsoft.IdentityModel.Tokens.xml",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll",
+        "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.xml",
+        "microsoft.identitymodel.tokens.5.1.2.nupkg.sha512",
+        "microsoft.identitymodel.tokens.nuspec"
+      ]
+    },
     "Microsoft.Management.Infrastructure/2.0.0": {
       "sha512": "IaKZRNBBv3sdrmBWd+aqwHq8cVHk/3WgWFAN/dt40MRY9rbtHiDfTTmaEN0tGTmQqGCGDo/ncntA8MvFMvcsRw==",
       "type": "package",
@@ -10295,21 +13633,47 @@
         "microsoft.rest.clientruntime.nuspec"
       ]
     },
-    "Microsoft.Rest.ClientRuntime.Azure/3.3.18": {
-      "sha512": "pCtem10PRQYvzRiwJVInsccsqB0NrTjW83NF3zWk1LpN3IS0AneZKq89RyogDT7mRMT1Li/mLY8N8kU6RAiK0g==",
+    "Microsoft.Rest.ClientRuntime.Azure/3.3.19": {
+      "sha512": "+NVBWvRXNwaAPTZUxjUlQggsrf3X0GbiRoxYfgc3kG9E55ZxZxvZPT3nIfC4DNqzGSXUEvmLbckdXgBBzGdUaA==",
       "type": "package",
-      "path": "microsoft.rest.clientruntime.azure/3.3.18",
+      "path": "microsoft.rest.clientruntime.azure/3.3.19",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net452/Microsoft.Rest.ClientRuntime.Azure.dll",
         "lib/net452/Microsoft.Rest.ClientRuntime.Azure.runtimeconfig.json",
         "lib/net452/Microsoft.Rest.ClientRuntime.Azure.xml",
+        "lib/net461/Microsoft.Rest.ClientRuntime.Azure.dll",
+        "lib/net461/Microsoft.Rest.ClientRuntime.Azure.runtimeconfig.json",
+        "lib/net461/Microsoft.Rest.ClientRuntime.Azure.xml",
         "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll",
         "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.runtimeconfig.json",
         "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.xml",
-        "microsoft.rest.clientruntime.azure.3.3.18.nupkg.sha512",
+        "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.Azure.dll",
+        "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.Azure.runtimeconfig.json",
+        "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.Azure.xml",
+        "microsoft.rest.clientruntime.azure.3.3.19.nupkg.sha512",
         "microsoft.rest.clientruntime.azure.nuspec"
+      ]
+    },
+    "Microsoft.Rest.ClientRuntime.Azure.Authentication/2.4.1": {
+      "sha512": "lzTUW5rm7aHp5cEb6VkhXcBlh7PyKTBoPY/zVlsy+YBOhweyivAI76wa1RDfUy7yqkaDvhgqC+bgqhh1+t3tdA==",
+      "type": "package",
+      "path": "microsoft.rest.clientruntime.azure.authentication/2.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Rest.ClientRuntime.Azure.Authentication.dll",
+        "lib/net452/Microsoft.Rest.ClientRuntime.Azure.Authentication.runtimeconfig.json",
+        "lib/net461/Microsoft.Rest.ClientRuntime.Azure.Authentication.dll",
+        "lib/net461/Microsoft.Rest.ClientRuntime.Azure.Authentication.runtimeconfig.json",
+        "lib/net461/Microsoft.Rest.ClientRuntime.Azure.Authentication.xml",
+        "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.Authentication.dll",
+        "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.Authentication.runtimeconfig.json",
+        "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.Azure.Authentication.dll",
+        "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.Azure.Authentication.runtimeconfig.json",
+        "microsoft.rest.clientruntime.azure.authentication.2.4.1.nupkg.sha512",
+        "microsoft.rest.clientruntime.azure.authentication.nuspec"
       ]
     },
     "Microsoft.VisualBasic/10.3.0": {
@@ -13541,6 +16905,24 @@
         "version.txt"
       ]
     },
+    "System.Memory.Data/1.0.2": {
+      "sha512": "JGkzeqgBsiZwKJZ1IxPNsDFZDhUvuEdX8L8BDC8N3KOj+6zMcNU28CNN59TpZE/VJYy9cP+5M+sbxtWJx3/xtw==",
+      "type": "package",
+      "path": "system.memory.data/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "DotNetPackageIcon.png",
+        "README.md",
+        "lib/net461/System.Memory.Data.dll",
+        "lib/net461/System.Memory.Data.xml",
+        "lib/netstandard2.0/System.Memory.Data.dll",
+        "lib/netstandard2.0/System.Memory.Data.xml",
+        "system.memory.data.1.0.2.nupkg.sha512",
+        "system.memory.data.nuspec"
+      ]
+    },
     "System.Net.Http/4.3.4": {
       "sha512": "aOa2d51SEbmM+H+Csw7yJOuNZoHkrP2XnAurye5HWYgGVVU54YZDvsLUYRv6h18X3sPnjNCANmN7ZhIPiqMcjA==",
       "type": "package",
@@ -13651,6 +17033,81 @@
         "runtimes/win/lib/netstandard1.3/System.Net.NameResolution.dll",
         "system.net.nameresolution.4.3.0.nupkg.sha512",
         "system.net.nameresolution.nuspec"
+      ]
+    },
+    "System.Net.NetworkInformation/4.3.0": {
+      "sha512": "zNVmWVry0pAu7lcrRBhwwU96WUdbsrGL3azyzsbXmVNptae1+Za+UgOe9Z6s8iaWhPn7/l4wQqhC56HZWq7tkg==",
+      "type": "package",
+      "path": "system.net.networkinformation/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net46/System.Net.NetworkInformation.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net46/System.Net.NetworkInformation.dll",
+        "ref/netcore50/System.Net.NetworkInformation.dll",
+        "ref/netcore50/System.Net.NetworkInformation.xml",
+        "ref/netcore50/de/System.Net.NetworkInformation.xml",
+        "ref/netcore50/es/System.Net.NetworkInformation.xml",
+        "ref/netcore50/fr/System.Net.NetworkInformation.xml",
+        "ref/netcore50/it/System.Net.NetworkInformation.xml",
+        "ref/netcore50/ja/System.Net.NetworkInformation.xml",
+        "ref/netcore50/ko/System.Net.NetworkInformation.xml",
+        "ref/netcore50/ru/System.Net.NetworkInformation.xml",
+        "ref/netcore50/zh-hans/System.Net.NetworkInformation.xml",
+        "ref/netcore50/zh-hant/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.0/System.Net.NetworkInformation.dll",
+        "ref/netstandard1.0/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.0/de/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.0/es/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.0/fr/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.0/it/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.0/ja/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.0/ko/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.0/ru/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.0/zh-hans/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.0/zh-hant/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.3/System.Net.NetworkInformation.dll",
+        "ref/netstandard1.3/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.3/de/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.3/es/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.3/fr/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.3/it/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.3/ja/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.3/ko/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.3/ru/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.3/zh-hans/System.Net.NetworkInformation.xml",
+        "ref/netstandard1.3/zh-hant/System.Net.NetworkInformation.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/linux/lib/netstandard1.3/System.Net.NetworkInformation.dll",
+        "runtimes/osx/lib/netstandard1.3/System.Net.NetworkInformation.dll",
+        "runtimes/win/lib/net46/System.Net.NetworkInformation.dll",
+        "runtimes/win/lib/netcore50/System.Net.NetworkInformation.dll",
+        "runtimes/win/lib/netstandard1.3/System.Net.NetworkInformation.dll",
+        "system.net.networkinformation.4.3.0.nupkg.sha512",
+        "system.net.networkinformation.nuspec"
       ]
     },
     "System.Net.Primitives/4.3.0": {
@@ -13770,6 +17227,53 @@
         "system.net.sockets.nuspec"
       ]
     },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.ObjectModel/4.3.0": {
       "sha512": "bdX+80eKv9bN6K4N+d77OankKHGn6CH711a6fcOpMQu2Fckp/Ft4L/kW9WznHpyR0NRAvJutzOMHNNlBGvxQzQ==",
       "type": "package",
@@ -13838,6 +17342,22 @@
         "ref/xamarinwatchos10/_._",
         "system.objectmodel.4.3.0.nupkg.sha512",
         "system.objectmodel.nuspec"
+      ]
+    },
+    "System.Private.DataContractSerialization/4.3.0": {
+      "sha512": "yDaJ2x3mMmjdZEDB4IbezSnCsnjQ4BxinKhRAaP6kEgL6Bb6jANWphs5SzyD8imqeC/3FxgsuXT6ykkiH1uUmA==",
+      "type": "package",
+      "path": "system.private.datacontractserialization/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.3/System.Private.DataContractSerialization.dll",
+        "ref/netstandard/_._",
+        "runtimes/aot/lib/netcore50/System.Private.DataContractSerialization.dll",
+        "system.private.datacontractserialization.4.3.0.nupkg.sha512",
+        "system.private.datacontractserialization.nuspec"
       ]
     },
     "System.Private.ServiceModel/4.7.0": {
@@ -14921,6 +18441,138 @@
         "system.runtime.numerics.nuspec"
       ]
     },
+    "System.Runtime.Serialization.Json/4.3.0": {
+      "sha512": "CpVfOH0M/uZ5PH+M9+Gu56K0j9lJw3M+PKRegTkcrY/stOIvRUeonggxNrfBYLA5WOHL2j15KNJuTuld3x4o9w==",
+      "type": "package",
+      "path": "system.runtime.serialization.json/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Runtime.Serialization.Json.dll",
+        "lib/netstandard1.3/System.Runtime.Serialization.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Runtime.Serialization.Json.dll",
+        "ref/netcore50/System.Runtime.Serialization.Json.xml",
+        "ref/netcore50/de/System.Runtime.Serialization.Json.xml",
+        "ref/netcore50/es/System.Runtime.Serialization.Json.xml",
+        "ref/netcore50/fr/System.Runtime.Serialization.Json.xml",
+        "ref/netcore50/it/System.Runtime.Serialization.Json.xml",
+        "ref/netcore50/ja/System.Runtime.Serialization.Json.xml",
+        "ref/netcore50/ko/System.Runtime.Serialization.Json.xml",
+        "ref/netcore50/ru/System.Runtime.Serialization.Json.xml",
+        "ref/netcore50/zh-hans/System.Runtime.Serialization.Json.xml",
+        "ref/netcore50/zh-hant/System.Runtime.Serialization.Json.xml",
+        "ref/netstandard1.0/System.Runtime.Serialization.Json.dll",
+        "ref/netstandard1.0/System.Runtime.Serialization.Json.xml",
+        "ref/netstandard1.0/de/System.Runtime.Serialization.Json.xml",
+        "ref/netstandard1.0/es/System.Runtime.Serialization.Json.xml",
+        "ref/netstandard1.0/fr/System.Runtime.Serialization.Json.xml",
+        "ref/netstandard1.0/it/System.Runtime.Serialization.Json.xml",
+        "ref/netstandard1.0/ja/System.Runtime.Serialization.Json.xml",
+        "ref/netstandard1.0/ko/System.Runtime.Serialization.Json.xml",
+        "ref/netstandard1.0/ru/System.Runtime.Serialization.Json.xml",
+        "ref/netstandard1.0/zh-hans/System.Runtime.Serialization.Json.xml",
+        "ref/netstandard1.0/zh-hant/System.Runtime.Serialization.Json.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.runtime.serialization.json.4.3.0.nupkg.sha512",
+        "system.runtime.serialization.json.nuspec"
+      ]
+    },
+    "System.Runtime.Serialization.Primitives/4.3.0": {
+      "sha512": "Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
+      "type": "package",
+      "path": "system.runtime.serialization.primitives/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net46/System.Runtime.Serialization.Primitives.dll",
+        "lib/netcore50/System.Runtime.Serialization.Primitives.dll",
+        "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net46/System.Runtime.Serialization.Primitives.dll",
+        "ref/netcore50/System.Runtime.Serialization.Primitives.dll",
+        "ref/netcore50/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/de/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/es/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/fr/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/it/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/ja/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/ko/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/ru/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/zh-hans/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/zh-hant/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/System.Runtime.Serialization.Primitives.dll",
+        "ref/netstandard1.0/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/de/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/es/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/fr/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/it/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/ja/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/ko/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/ru/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/zh-hans/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/zh-hant/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/System.Runtime.Serialization.Primitives.dll",
+        "ref/netstandard1.3/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/de/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/es/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/fr/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/it/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/ja/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/ko/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/ru/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/zh-hans/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/zh-hant/System.Runtime.Serialization.Primitives.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Runtime.Serialization.Primitives.dll",
+        "system.runtime.serialization.primitives.4.3.0.nupkg.sha512",
+        "system.runtime.serialization.primitives.nuspec"
+      ]
+    },
     "System.Security.AccessControl/5.0.0": {
       "sha512": "dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
       "type": "package",
@@ -14966,6 +18618,45 @@
         "system.security.accesscontrol.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Security.Claims/4.3.0": {
+      "sha512": "P/+BR/2lnc4PNDHt/TPBAWHVMLMRHsyYZbU1NphW4HIWzCggz8mJbTQQ3MKljFE7LS3WagmVFuBgoLcFzYXlkA==",
+      "type": "package",
+      "path": "system.security.claims/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Claims.dll",
+        "lib/netstandard1.3/System.Security.Claims.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Claims.dll",
+        "ref/netstandard1.3/System.Security.Claims.dll",
+        "ref/netstandard1.3/System.Security.Claims.xml",
+        "ref/netstandard1.3/de/System.Security.Claims.xml",
+        "ref/netstandard1.3/es/System.Security.Claims.xml",
+        "ref/netstandard1.3/fr/System.Security.Claims.xml",
+        "ref/netstandard1.3/it/System.Security.Claims.xml",
+        "ref/netstandard1.3/ja/System.Security.Claims.xml",
+        "ref/netstandard1.3/ko/System.Security.Claims.xml",
+        "ref/netstandard1.3/ru/System.Security.Claims.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Claims.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Claims.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.security.claims.4.3.0.nupkg.sha512",
+        "system.security.claims.nuspec"
       ]
     },
     "System.Security.Cryptography.Algorithms/4.3.0": {
@@ -15416,6 +19107,65 @@
         "version.txt"
       ]
     },
+    "System.Security.Principal/4.3.0": {
+      "sha512": "I1tkfQlAoMM2URscUtpcRo/hX0jinXx6a/KUtEQoz3owaYwl3qwsO8cbzYVVnjxrzxjHo3nJC+62uolgeGIS9A==",
+      "type": "package",
+      "path": "system.security.principal/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Security.Principal.dll",
+        "lib/netstandard1.0/System.Security.Principal.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Security.Principal.dll",
+        "ref/netcore50/System.Security.Principal.xml",
+        "ref/netcore50/de/System.Security.Principal.xml",
+        "ref/netcore50/es/System.Security.Principal.xml",
+        "ref/netcore50/fr/System.Security.Principal.xml",
+        "ref/netcore50/it/System.Security.Principal.xml",
+        "ref/netcore50/ja/System.Security.Principal.xml",
+        "ref/netcore50/ko/System.Security.Principal.xml",
+        "ref/netcore50/ru/System.Security.Principal.xml",
+        "ref/netcore50/zh-hans/System.Security.Principal.xml",
+        "ref/netcore50/zh-hant/System.Security.Principal.xml",
+        "ref/netstandard1.0/System.Security.Principal.dll",
+        "ref/netstandard1.0/System.Security.Principal.xml",
+        "ref/netstandard1.0/de/System.Security.Principal.xml",
+        "ref/netstandard1.0/es/System.Security.Principal.xml",
+        "ref/netstandard1.0/fr/System.Security.Principal.xml",
+        "ref/netstandard1.0/it/System.Security.Principal.xml",
+        "ref/netstandard1.0/ja/System.Security.Principal.xml",
+        "ref/netstandard1.0/ko/System.Security.Principal.xml",
+        "ref/netstandard1.0/ru/System.Security.Principal.xml",
+        "ref/netstandard1.0/zh-hans/System.Security.Principal.xml",
+        "ref/netstandard1.0/zh-hant/System.Security.Principal.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.security.principal.4.3.0.nupkg.sha512",
+        "system.security.principal.nuspec"
+      ]
+    },
     "System.Security.Principal.Windows/5.0.0": {
       "sha512": "t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
       "type": "package",
@@ -15469,6 +19219,47 @@
         "system.security.principal.windows.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Security.SecureString/4.3.0": {
+      "sha512": "PnXp38O9q/2Oe4iZHMH60kinScv6QiiL2XH54Pj2t0Y6c2zKPEiAZsM/M3wBOHLNTBDFP0zfy13WN2M0qFz5jg==",
+      "type": "package",
+      "path": "system.security.securestring/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.SecureString.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.SecureString.dll",
+        "ref/netstandard1.3/System.Security.SecureString.dll",
+        "ref/netstandard1.3/System.Security.SecureString.xml",
+        "ref/netstandard1.3/de/System.Security.SecureString.xml",
+        "ref/netstandard1.3/es/System.Security.SecureString.xml",
+        "ref/netstandard1.3/fr/System.Security.SecureString.xml",
+        "ref/netstandard1.3/it/System.Security.SecureString.xml",
+        "ref/netstandard1.3/ja/System.Security.SecureString.xml",
+        "ref/netstandard1.3/ko/System.Security.SecureString.xml",
+        "ref/netstandard1.3/ru/System.Security.SecureString.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.SecureString.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.SecureString.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netstandard1.3/System.Security.SecureString.dll",
+        "runtimes/win/lib/net46/System.Security.SecureString.dll",
+        "runtimes/win/lib/netstandard1.3/System.Security.SecureString.dll",
+        "system.security.securestring.4.3.0.nupkg.sha512",
+        "system.security.securestring.nuspec"
       ]
     },
     "System.ServiceModel.Duplex/4.7.0": {
@@ -15971,6 +19762,27 @@
         "version.txt"
       ]
     },
+    "System.Text.Json/4.6.0": {
+      "sha512": "4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
+      "type": "package",
+      "path": "system.text.json/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.4.6.0.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Text.RegularExpressions/4.3.0": {
       "sha512": "RpT2DA+L660cBt1FssIE9CAGpLFdFPuheB7pLpKpn6ZXNby7jDERe8Ua/Ne2xGiwLVG2JOqziiaVCGDon5sKFA==",
       "type": "package",
@@ -16355,6 +20167,86 @@
         "version.txt"
       ]
     },
+    "System.Threading.Thread/4.3.0": {
+      "sha512": "OHmbT+Zz065NKII/ZHcH9XO1dEuLGI1L2k7uYss+9C1jLxTC9kTZZuzUOyXHayRk+dft9CiDf3I/QZ0t8JKyBQ==",
+      "type": "package",
+      "path": "system.threading.thread/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Threading.Thread.dll",
+        "lib/netcore50/_._",
+        "lib/netstandard1.3/System.Threading.Thread.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Threading.Thread.dll",
+        "ref/netstandard1.3/System.Threading.Thread.dll",
+        "ref/netstandard1.3/System.Threading.Thread.xml",
+        "ref/netstandard1.3/de/System.Threading.Thread.xml",
+        "ref/netstandard1.3/es/System.Threading.Thread.xml",
+        "ref/netstandard1.3/fr/System.Threading.Thread.xml",
+        "ref/netstandard1.3/it/System.Threading.Thread.xml",
+        "ref/netstandard1.3/ja/System.Threading.Thread.xml",
+        "ref/netstandard1.3/ko/System.Threading.Thread.xml",
+        "ref/netstandard1.3/ru/System.Threading.Thread.xml",
+        "ref/netstandard1.3/zh-hans/System.Threading.Thread.xml",
+        "ref/netstandard1.3/zh-hant/System.Threading.Thread.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.thread.4.3.0.nupkg.sha512",
+        "system.threading.thread.nuspec"
+      ]
+    },
+    "System.Threading.ThreadPool/4.3.0": {
+      "sha512": "k/+g4b7vjdd4aix83sTgC9VG6oXYKAktSfNIJUNGxPEj7ryEOfzHHhfnmsZvjxawwcD9HyWXKCXmPjX8U4zeSw==",
+      "type": "package",
+      "path": "system.threading.threadpool/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Threading.ThreadPool.dll",
+        "lib/netcore50/_._",
+        "lib/netstandard1.3/System.Threading.ThreadPool.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Threading.ThreadPool.dll",
+        "ref/netstandard1.3/System.Threading.ThreadPool.dll",
+        "ref/netstandard1.3/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/de/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/es/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/fr/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/it/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/ja/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/ko/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/ru/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/zh-hans/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/zh-hant/System.Threading.ThreadPool.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.threadpool.4.3.0.nupkg.sha512",
+        "system.threading.threadpool.nuspec"
+      ]
+    },
     "System.Threading.Timer/4.3.0": {
       "sha512": "Z6YfyYTCg7lOZjJzBjONJTFKGN9/NIYKSxhU5GRd+DTwHSZyvWp1xuI5aR+dLg+ayyC5Xv57KiY4oJ0tMO89fQ==",
       "type": "package",
@@ -16618,6 +20510,116 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "System.Xml.XmlDocument/4.3.0": {
+      "sha512": "lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
+      "type": "package",
+      "path": "system.xml.xmldocument/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Xml.XmlDocument.dll",
+        "lib/netstandard1.3/System.Xml.XmlDocument.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Xml.XmlDocument.dll",
+        "ref/netstandard1.3/System.Xml.XmlDocument.dll",
+        "ref/netstandard1.3/System.Xml.XmlDocument.xml",
+        "ref/netstandard1.3/de/System.Xml.XmlDocument.xml",
+        "ref/netstandard1.3/es/System.Xml.XmlDocument.xml",
+        "ref/netstandard1.3/fr/System.Xml.XmlDocument.xml",
+        "ref/netstandard1.3/it/System.Xml.XmlDocument.xml",
+        "ref/netstandard1.3/ja/System.Xml.XmlDocument.xml",
+        "ref/netstandard1.3/ko/System.Xml.XmlDocument.xml",
+        "ref/netstandard1.3/ru/System.Xml.XmlDocument.xml",
+        "ref/netstandard1.3/zh-hans/System.Xml.XmlDocument.xml",
+        "ref/netstandard1.3/zh-hant/System.Xml.XmlDocument.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.xml.xmldocument.4.3.0.nupkg.sha512",
+        "system.xml.xmldocument.nuspec"
+      ]
+    },
+    "System.Xml.XmlSerializer/4.3.0": {
+      "sha512": "MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
+      "type": "package",
+      "path": "system.xml.xmlserializer/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Xml.XmlSerializer.dll",
+        "lib/netstandard1.3/System.Xml.XmlSerializer.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Xml.XmlSerializer.dll",
+        "ref/netcore50/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/de/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/es/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/fr/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/it/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/ja/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/ko/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/ru/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/zh-hans/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/zh-hant/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/System.Xml.XmlSerializer.dll",
+        "ref/netstandard1.0/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/de/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/es/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/fr/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/it/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/ja/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/ko/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/ru/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/zh-hans/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/zh-hant/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/System.Xml.XmlSerializer.dll",
+        "ref/netstandard1.3/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/de/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/es/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/fr/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/it/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/ja/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/ko/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/ru/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/zh-hans/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/zh-hant/System.Xml.XmlSerializer.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll",
+        "system.xml.xmlserializer.4.3.0.nupkg.sha512",
+        "system.xml.xmlserializer.nuspec"
+      ]
+    },
     "UiPath/23.10.81.50671": {
       "sha512": "nCC/7FAp1Cl2YcjQyaJvwYwk/dgR1wZ9k7hTDKsRhxCB4qJY5wg7KOriW52p16uibvlGz9roZy0rEyUDxy37mQ==",
       "type": "package",
@@ -16710,6 +20712,113 @@
         "lib/net5.0/UiPath.Activities.RuntimeGovernance.dll",
         "uipath.activities.runtimegovernance.1.1.6.nupkg.sha512",
         "uipath.activities.runtimegovernance.nuspec"
+      ]
+    },
+    "UiPath.Azure.Activities/1.2.0": {
+      "sha512": "+aBqT4pwCeDUzm+zs1KfuEGvaSF6zSdFw3GIcwhJHIdMfdwuxupEFl1W5g3pKEWKb5KKLaKgycgMMw+x8Z6ekA==",
+      "type": "package",
+      "path": "uipath.azure.activities/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/UiPath.Azure.Activities.Design.dll",
+        "lib/net461/UiPath.Azure.Activities.dll",
+        "lib/net461/UiPath.Azure.dll",
+        "lib/net461/de/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net461/de/UiPath.Azure.Activities.resources.dll",
+        "lib/net461/de/UiPath.Azure.resources.dll",
+        "lib/net461/es-MX/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net461/es-MX/UiPath.Azure.Activities.resources.dll",
+        "lib/net461/es-MX/UiPath.Azure.resources.dll",
+        "lib/net461/es/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net461/es/UiPath.Azure.Activities.resources.dll",
+        "lib/net461/es/UiPath.Azure.resources.dll",
+        "lib/net461/fr/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net461/fr/UiPath.Azure.Activities.resources.dll",
+        "lib/net461/fr/UiPath.Azure.resources.dll",
+        "lib/net461/ja/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net461/ja/UiPath.Azure.Activities.resources.dll",
+        "lib/net461/ja/UiPath.Azure.resources.dll",
+        "lib/net461/ko/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net461/ko/UiPath.Azure.Activities.resources.dll",
+        "lib/net461/ko/UiPath.Azure.resources.dll",
+        "lib/net461/pt-BR/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net461/pt-BR/UiPath.Azure.Activities.resources.dll",
+        "lib/net461/pt-BR/UiPath.Azure.resources.dll",
+        "lib/net461/pt/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net461/pt/UiPath.Azure.Activities.resources.dll",
+        "lib/net461/pt/UiPath.Azure.resources.dll",
+        "lib/net461/ru/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net461/ru/UiPath.Azure.Activities.resources.dll",
+        "lib/net461/ru/UiPath.Azure.resources.dll",
+        "lib/net461/tr/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net461/tr/UiPath.Azure.Activities.resources.dll",
+        "lib/net461/tr/UiPath.Azure.resources.dll",
+        "lib/net461/zh-CN/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net461/zh-CN/UiPath.Azure.Activities.resources.dll",
+        "lib/net461/zh-CN/UiPath.Azure.resources.dll",
+        "lib/net5.0-windows7.0/UiPath.Azure.Activities.Design.dll",
+        "lib/net5.0-windows7.0/UiPath.Azure.Activities.dll",
+        "lib/net5.0-windows7.0/UiPath.Azure.dll",
+        "lib/net5.0-windows7.0/de/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/de/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0-windows7.0/de/UiPath.Azure.resources.dll",
+        "lib/net5.0-windows7.0/es-MX/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/es-MX/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0-windows7.0/es-MX/UiPath.Azure.resources.dll",
+        "lib/net5.0-windows7.0/es/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/es/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0-windows7.0/es/UiPath.Azure.resources.dll",
+        "lib/net5.0-windows7.0/fr/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/fr/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0-windows7.0/fr/UiPath.Azure.resources.dll",
+        "lib/net5.0-windows7.0/ja/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ja/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ja/UiPath.Azure.resources.dll",
+        "lib/net5.0-windows7.0/ko/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ko/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ko/UiPath.Azure.resources.dll",
+        "lib/net5.0-windows7.0/pt-BR/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/pt-BR/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0-windows7.0/pt-BR/UiPath.Azure.resources.dll",
+        "lib/net5.0-windows7.0/pt/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/pt/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0-windows7.0/pt/UiPath.Azure.resources.dll",
+        "lib/net5.0-windows7.0/ru/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ru/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ru/UiPath.Azure.resources.dll",
+        "lib/net5.0-windows7.0/tr/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/tr/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0-windows7.0/tr/UiPath.Azure.resources.dll",
+        "lib/net5.0-windows7.0/zh-CN/UiPath.Azure.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/zh-CN/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0-windows7.0/zh-CN/UiPath.Azure.resources.dll",
+        "lib/net5.0/UiPath.Azure.Activities.dll",
+        "lib/net5.0/UiPath.Azure.dll",
+        "lib/net5.0/de/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0/de/UiPath.Azure.resources.dll",
+        "lib/net5.0/es-MX/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0/es-MX/UiPath.Azure.resources.dll",
+        "lib/net5.0/es/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0/es/UiPath.Azure.resources.dll",
+        "lib/net5.0/fr/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0/fr/UiPath.Azure.resources.dll",
+        "lib/net5.0/ja/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0/ja/UiPath.Azure.resources.dll",
+        "lib/net5.0/ko/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0/ko/UiPath.Azure.resources.dll",
+        "lib/net5.0/pt-BR/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0/pt-BR/UiPath.Azure.resources.dll",
+        "lib/net5.0/pt/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0/pt/UiPath.Azure.resources.dll",
+        "lib/net5.0/ru/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0/ru/UiPath.Azure.resources.dll",
+        "lib/net5.0/tr/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0/tr/UiPath.Azure.resources.dll",
+        "lib/net5.0/zh-CN/UiPath.Azure.Activities.resources.dll",
+        "lib/net5.0/zh-CN/UiPath.Azure.resources.dll",
+        "uipath.azure.activities.1.2.0.nupkg.sha512",
+        "uipath.azure.activities.nuspec"
       ]
     },
     "UiPath.CodedWorkflows/23.10.5": {
@@ -18088,11 +22197,36 @@
         "uipath.vision.3.11.1.nupkg.sha512",
         "uipath.vision.nuspec"
       ]
+    },
+    "WindowsAzure.Storage/9.3.3": {
+      "sha512": "VUV8j6dzkU/7vDgk5k+ob5g7nnch2fNByr0p9aOxMGFGk+tAnTehrZ4qnClF04CVozP1GNN2zrnbsxCmr+iZBg==",
+      "type": "package",
+      "path": "windowsazure.storage/9.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.WindowsAzure.Storage.dll",
+        "lib/net45/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/net45/Microsoft.WindowsAzure.Storage.xml",
+        "lib/netstandard1.0/Microsoft.WindowsAzure.Storage.dll",
+        "lib/netstandard1.0/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll",
+        "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/win8/Microsoft.WindowsAzure.Storage.dll",
+        "lib/win8/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/wp8/Microsoft.WindowsAzure.Storage.dll",
+        "lib/wp8/Microsoft.WindowsAzure.Storage.pdb",
+        "lib/wpa/Microsoft.WindowsAzure.Storage.dll",
+        "lib/wpa/Microsoft.WindowsAzure.Storage.pdb",
+        "windowsazure.storage.9.3.3.nupkg.sha512",
+        "windowsazure.storage.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "": [],
     "net6.0-windows7.0": [
+      "UiPath.Azure.Activities >= 1.2.0 <= 1.2.0",
       "UiPath.System.Activities >= 23.10.6 <= 23.10.6",
       "UiPath.Testing.Activities >= 23.10.1 <= 23.10.1",
       "UiPath.UIAutomation.Activities >= 23.10.11 <= 23.10.11"
@@ -18112,6 +22246,11 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "dependencies": {
+          "UiPath.Azure.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.2.0, 1.2.0]"
+          },
           "UiPath.System.Activities": {
             "include": "Runtime",
             "target": "Package",
