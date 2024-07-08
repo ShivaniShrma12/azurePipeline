@@ -2,6 +2,66 @@
   "Packages": [
     {
       "Package": {
+        "Id": "UiPath.Azure.Activities",
+        "Version": "1.2.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\azure.core\\1.20.0\\lib/net5.0/Azure.Core.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\azure.data.tables\\12.2.0\\lib/netstandard2.0/Azure.Data.Tables.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\azure.identity\\1.4.1\\lib/netstandard2.0/Azure.Identity.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\azure.security.keyvault.secrets\\4.2.0\\lib/netstandard2.0/Azure.Security.KeyVault.Secrets.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\azure.storage.blobs\\12.10.0\\lib/netstandard2.0/Azure.Storage.Blobs.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\azure.storage.common\\12.9.0\\lib/netstandard2.0/Azure.Storage.Common.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.keyvault\\3.0.5\\lib/netstandard2.0/Microsoft.Azure.KeyVault.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.keyvault.webkey\\3.0.5\\lib/netstandard2.0/Microsoft.Azure.KeyVault.WebKey.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.appservice.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.AppService.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.batchai.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.BatchAI.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.cdn.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Cdn.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.compute.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Compute.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.containerinstance.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.ContainerInstance.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.containerregistry.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.ContainerRegistry.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.containerservice.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.ContainerService.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.cosmosdb.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.CosmosDB.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.dns.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Dns.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.eventhub.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.EventHub.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.graph.rbac.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Graph.RBAC.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.keyvault.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.KeyVault.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.locks.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Locks.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.monitor.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Monitor.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.msi.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Msi.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.network\\20.6.0\\lib/netstandard2.0/Microsoft.Azure.Management.Network.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.network.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Network.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.privatedns.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.PrivateDns.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.redis.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Redis.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.resourcemanager.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.ResourceManager.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.search.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Search.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.securitycenter\\2.1.0\\lib/netstandard2.0/Microsoft.Azure.Management.SecurityCenter.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.servicebus.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.ServiceBus.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.sql.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Sql.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.storage.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Storage.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.trafficmanager.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.TrafficManager.Fluent.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.identity.client\\4.30.1\\lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\2.18.4\\lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.identitymodel.clients.activedirectory\\4.3.0\\lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.identitymodel.logging\\1.1.2\\lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.1.2\\lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.19\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.Azure.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.rest.clientruntime.azure.authentication\\2.4.1\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.Azure.Authentication.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/netstandard2.0/Newtonsoft.Json.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\system.memory.data\\1.0.2\\lib/netstandard2.0/System.Memory.Data.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.azure.activities\\1.2.0\\lib/net5.0-windows7.0/UiPath.Azure.Activities.Design.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.azure.activities\\1.2.0\\lib/net5.0-windows7.0/UiPath.Azure.Activities.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.azure.activities\\1.2.0\\lib/net5.0-windows7.0/UiPath.Azure.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.telemetry.client\\1.6.69\\lib/netstandard2.0/TelemetryClient.dll",
+        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\windowsazure.storage\\9.3.3\\lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll"
+      ],
+      "Path": "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.azure.activities\\1.2.0"
+    },
+    {
+      "Package": {
         "Id": "UiPath.System.Activities",
         "Version": "23.10.6"
       },
@@ -31,8 +91,6 @@
         "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.extensions.options\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Options.dll",
         "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll",
         "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.management.infrastructure.cimcmdlets\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.Management.Infrastructure.CimCmdlets.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
         "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.powershell.commands.diagnostics\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Diagnostics.dll",
         "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.powershell.commands.management\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Management.dll",
         "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.powershell.commands.utility\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Utility.dll",
@@ -157,66 +215,6 @@
         "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net6.0-windows7.0/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.11"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Azure.Activities",
-        "Version": "1.2.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\azure.core\\1.20.0\\lib/net5.0/Azure.Core.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\azure.data.tables\\12.2.0\\lib/netstandard2.0/Azure.Data.Tables.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\azure.identity\\1.4.1\\lib/netstandard2.0/Azure.Identity.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\azure.security.keyvault.secrets\\4.2.0\\lib/netstandard2.0/Azure.Security.KeyVault.Secrets.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\azure.storage.blobs\\12.10.0\\lib/netstandard2.0/Azure.Storage.Blobs.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\azure.storage.common\\12.9.0\\lib/netstandard2.0/Azure.Storage.Common.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.keyvault\\3.0.5\\lib/netstandard2.0/Microsoft.Azure.KeyVault.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.keyvault.webkey\\3.0.5\\lib/netstandard2.0/Microsoft.Azure.KeyVault.WebKey.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.appservice.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.AppService.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.batchai.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.BatchAI.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.cdn.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Cdn.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.compute.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Compute.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.containerinstance.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.ContainerInstance.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.containerregistry.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.ContainerRegistry.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.containerservice.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.ContainerService.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.cosmosdb.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.CosmosDB.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.dns.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Dns.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.eventhub.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.EventHub.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.graph.rbac.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Graph.RBAC.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.keyvault.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.KeyVault.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.locks.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Locks.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.monitor.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Monitor.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.msi.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Msi.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.network\\20.6.0\\lib/netstandard2.0/Microsoft.Azure.Management.Network.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.network.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Network.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.privatedns.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.PrivateDns.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.redis.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Redis.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.resourcemanager.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.ResourceManager.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.search.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Search.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.securitycenter\\2.1.0\\lib/netstandard2.0/Microsoft.Azure.Management.SecurityCenter.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.servicebus.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.ServiceBus.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.sql.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Sql.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.storage.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.Storage.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.azure.management.trafficmanager.fluent\\1.38.0\\lib/netstandard1.4/Microsoft.Azure.Management.TrafficManager.Fluent.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.identity.client\\4.30.1\\lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\2.18.4\\lib/netcoreapp2.1/Microsoft.Identity.Client.Extensions.Msal.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.identitymodel.clients.activedirectory\\4.3.0\\lib/netstandard1.3/Microsoft.IdentityModel.Clients.ActiveDirectory.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.identitymodel.logging\\1.1.2\\lib/netstandard1.4/Microsoft.IdentityModel.Logging.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.1.2\\lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.19\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.Azure.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.rest.clientruntime.azure.authentication\\2.4.1\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.Azure.Authentication.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/netstandard2.0/Newtonsoft.Json.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\system.memory.data\\1.0.2\\lib/netstandard2.0/System.Memory.Data.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.azure.activities\\1.2.0\\lib/net5.0-windows7.0/UiPath.Azure.Activities.Design.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.azure.activities\\1.2.0\\lib/net5.0-windows7.0/UiPath.Azure.Activities.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.azure.activities\\1.2.0\\lib/net5.0-windows7.0/UiPath.Azure.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.telemetry.client\\1.6.69\\lib/netstandard2.0/TelemetryClient.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\windowsazure.storage\\9.3.3\\lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll"
-      ],
-      "Path": "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.azure.activities\\1.2.0"
     }
   ],
   "Conflicts": [],
@@ -6738,10 +6736,7 @@
         "Id": "Microsoft.Management.Infrastructure.Runtime.Win",
         "Version": "2.0.0"
       },
-      "Assemblies": [
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes\\win10-x64\\lib\\netstandard1.6\\Microsoft.Management.Infrastructure.Native.dll",
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes\\win10-x64\\lib\\netstandard1.6\\Microsoft.Management.Infrastructure.dll"
-      ],
+      "Assemblies": [],
       "Path": "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0"
     },
     {
@@ -7481,24 +7476,6 @@
         "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\runtime.win.system.runtime.extensions\\4.3.0\\runtimes\\win\\lib\\netstandard1.5\\System.Runtime.Extensions.dll"
       ],
       "Path": "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\runtime.win.system.runtime.extensions\\4.3.0"
-    },
-    {
-      "Package": {
-        "Id": "runtime.win7-x64.runtime.native.System.IO.Compression",
-        "Version": "4.3.0"
-      },
-      "Assemblies": [],
-      "Path": "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\runtime.win7-x64.runtime.native.system.io.compression\\4.3.0"
-    },
-    {
-      "Package": {
-        "Id": "runtime.win7.System.Private.Uri",
-        "Version": "4.3.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtimes\\win\\lib\\netstandard1.0\\System.Private.Uri.dll"
-      ],
-      "Path": "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0"
     },
     {
       "Package": {

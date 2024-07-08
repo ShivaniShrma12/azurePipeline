@@ -9,6 +9,12 @@ jobs:
   trigger:
     runs-on: ubuntu-latest
     steps:
+      - name: Debug Output
+        run: |
+          echo "Jenkins URL: ${{ secrets.JENKINS_URL }}"
+          echo "Jenkins User: ${{ secrets.JENKINS_USER }}"
+          echo "Jenkins Token Length: ${#{{ secrets.JENKINS_TOKEN }}}"
+
       - name: Trigger Jenkins Job
         run: |
           curl -X POST ${{ secrets.JENKINS_URL }}/job/SampleTestAutomation/build \

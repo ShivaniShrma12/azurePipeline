@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c9Pk8zCPtbtu8J+a507oIVBAAhiQc9Uo96fOZryVuJEWxAVxD4FdUkZGlF+e9txKhfdlrT4Nvp6TaDOEuKQDTg==",
+  "dgSpecHash": "WWVc9oNPeIQG2htJAP7dWzCLXm2bQ0KdDjUqny0+7PssbtcX3dBsi4IY2/eFowHOebuENB4HwMAJbxLERfzxPQ==",
   "success": true,
   "projectFilePath": "D:\\Uipath\\SampleTestAutomation_Windows\\.local\\",
   "expectedPackageFiles": [
@@ -156,8 +156,6 @@
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\runtime.win.system.net.primitives\\4.3.0\\runtime.win.system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\runtime.win.system.net.sockets\\4.3.0\\runtime.win.system.net.sockets.4.3.0.nupkg.sha512",
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\runtime.win.system.runtime.extensions\\4.3.0\\runtime.win.system.runtime.extensions.4.3.0.nupkg.sha512",
-    "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\runtime.win7-x64.runtime.native.system.io.compression\\4.3.0\\runtime.win7-x64.runtime.native.system.io.compression.4.3.0.nupkg.sha512",
-    "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtime.win7.system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\sharpziplib\\1.3.3\\sharpziplib.1.3.3.nupkg.sha512",
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20230906.1\\system.activities.viewmodels.1.0.0-20230906.1.nupkg.sha512",
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
