@@ -15,7 +15,8 @@ jobs:
           echo "Jenkins User: ${{ secrets.JENKINS_USER }}"
           echo "Jenkins Token Length: $(echo -n ${{ secrets.JENKINS_TOKEN }} | wc -c)"
 
-      - name: Trigger Jenkins Job
+      - name: Test Jenkins Connection
         run: |
-          curl -X POST ${{ secrets.JENKINS_URL }}/job/SampleTestAutomation/build \
+          curl -I -X GET ${{ secrets.JENKINS_URL }}
+          curl -I -X POST ${{ secrets.JENKINS_URL }}/job/SampleTestAutomation/build \
           --user "${{ secrets.JENKINS_USER }}:${{ secrets.JENKINS_TOKEN }}"
