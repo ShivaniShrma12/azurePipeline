@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sQMi6P0Vy6GNoAymdsHsQceLBpb7MiowGN1QedI9+cy2Ummq+XvhuiWiekg6osaQcPrzJeZmzSxElUR4nTQ4iA==",
+  "dgSpecHash": "OzvAfSQzVRO7wGlqjlxulIdM/htEemUkUBUf3kJV+pMMkT51Jc9qyC9MNkI7e281DLSnSonONgrKJcv3aOjC1A==",
   "success": true,
   "projectFilePath": "D:\\Uipath\\sampleUipath\\sampleUipathTest\\.local\\",
   "expectedPackageFiles": [
@@ -290,7 +290,7 @@
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath\\23.4.62.63011\\uipath.23.4.62.63011.nupkg.sha512",
+    "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath\\24.10.93.21985\\uipath.24.10.93.21985.nupkg.sha512",
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\uipath.activities.runtimegovernance.1.1.6.nupkg.sha512",
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.codedworkflows\\23.2.0-alpha.3503132\\uipath.codedworkflows.23.2.0-alpha.3503132.nupkg.sha512",
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.connectionclient\\1.4.3-20221214.2\\uipath.connectionclient.1.4.3-20221214.2.nupkg.sha512",
@@ -309,9 +309,21 @@
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.8\\uipath.uiautomation.activities.runtime.23.4.8.nupkg.sha512",
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.vision\\3.10.1\\uipath.vision.3.10.1.nupkg.sha512",
     "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\uipath.webapi.activities\\1.9.2\\uipath.webapi.activities.1.9.2.nupkg.sha512",
-    "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\web_application_library_csharp\\1.0.80\\web_application_library_csharp.1.0.80.nupkg.sha512"
+    "C:\\Users\\SHIVANI SHARMA\\.nuget\\packages\\web_application_library_csharp\\1.0.85\\web_application_library_csharp.1.0.85.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "D:\\Uipath\\sampleUipath\\sampleUipathTest\\.local",
+      "message": "SampleUipathTest depends on UiPath (>= 23.10.8894.39673) but UiPath 23.10.8894.39673 was not found. An approximate best match of UiPath 24.10.93.21985 was resolved.",
+      "libraryId": "UiPath",
+      "targetGraphs": [
+        "net8.0-windows7.0",
+        "net8.0-windows7.0/win-x64"
+      ]
+    },
     {
       "code": "NU1608",
       "level": "Warning",
@@ -329,7 +341,19 @@
       "level": "Warning",
       "warningLevel": 1,
       "filePath": "D:\\Uipath\\sampleUipath\\sampleUipathTest\\.local",
-      "message": "Detected package version outside of dependency constraint: UiPath.MobileAutomation.Activities 22.10.4 requires UiPath (= 22.10.59.14500) but version UiPath 23.4.62.63011 was resolved.",
+      "message": "Detected package version outside of dependency constraint: UiPath.MobileAutomation.Activities 22.10.4 requires UiPath (= 22.10.59.14500) but version UiPath 24.10.93.21985 was resolved.",
+      "libraryId": "UiPath",
+      "targetGraphs": [
+        "net8.0-windows7.0",
+        "net8.0-windows7.0/win-x64"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "D:\\Uipath\\sampleUipath\\sampleUipathTest\\.local",
+      "message": "Detected package version outside of dependency constraint: UiPath.UIAutomation.Activities.Runtime 23.4.8 requires UiPath (= 23.4.62.63011) but version UiPath 24.10.93.21985 was resolved.",
       "libraryId": "UiPath",
       "targetGraphs": [
         "net8.0-windows7.0",

@@ -905,6 +905,22 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/JsonPlaceholder API Tests/ApiPass_TestCase.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "JSONPassDataTable&Sequence_1",
+        "ReportsPath&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_Suite_ID",
+        "In_Report_ID",
+        "out_TestID",
+        "out_BugID"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

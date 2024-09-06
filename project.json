@@ -10,13 +10,13 @@
     "EriBank_IOS_Library_New_Windows_CSharp": "[1.0.13]",
     "ReporterForUiPath.Activities": "[3.0.1]",
     "RestSharp": "[106.11.2]",
-    "UiPath": "[23.4.62.63011]",
+    "UiPath": "[24.10.93.21985]",
     "UiPath.Excel.Activities": "[2.20.3]",
     "UiPath.Mail.Activities": "[1.20.3]",
     "UiPath.System.Activities": "[23.4.4]",
     "UiPath.Testing.Activities": "[23.4.1]",
     "UiPath.WebAPI.Activities": "[1.9.2]",
-    "Web_Application_Library_CSharp": "[1.0.80]"
+    "Web_Application_Library_CSharp": "[1.0.85]"
   },
   "webServices": [],
   "entitiesStores": [],
