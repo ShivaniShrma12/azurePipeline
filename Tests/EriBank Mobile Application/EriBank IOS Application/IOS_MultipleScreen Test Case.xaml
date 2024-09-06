@@ -1,0 +1,568 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="IOS_MultipleScreen_TestCase" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ee="clr-namespace:EriBank_IOS_Library_New_Windows_CSharp.EriBank_IOS;assembly=EriBank_IOS_Library_New_Windows_CSharp" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uma="clr-namespace:UiPath.MobileAutomation.Activities;assembly=UiPath.MobileAutomation.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_Suite_ID" Type="OutArgument(x:String)" />
+    <x:Property Name="In_Report_ID" Type="InArgument(x:Int32)" />
+    <x:Property Name="out_TestID" Type="OutArgument(x:String)" />
+    <x:Property Name="out_BugID" Type="OutArgument(x:String)" />
+  </x:Members>
+  <this:IOS_MultipleScreen_TestCase.In_Report_ID>
+    <InArgument x:TypeArguments="x:Int32" />
+  </this:IOS_MultipleScreen_TestCase.In_Report_ID>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>1152,4354</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.MobileAutomation.Activities</x:String>
+      <x:String>EriBank_IOS_Library_New_Windows_CSharp.EriBank_IOS</x:String>
+      <x:String>ReporterForUiPath.Enums</x:String>
+      <x:String>ReporterForUiPath.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.MobileAutomation.Models</x:String>
+      <x:String>UiPath.MobileAutomation.Activities.Enums</x:String>
+      <x:String>UiPath.MobileAutomation.Enums</x:String>
+      <x:String>UiPath.MobileAutomation.Contracts.Target</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>EriBank_IOS_Library_New_Windows_CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath.Activities</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Jira.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MobileAutomation</AssemblyReference>
+      <AssemblyReference>UiPath.MobileAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="IOS_MultipleScreen_TestCase" sap:VirtualizedContainerService.HintSize="642,4289.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="EribankIOSMultipleAppData" />
+      <Variable x:TypeArguments="x:String" Name="ReportsPath" />
+      <Variable x:TypeArguments="uma:MobileDevice" Name="in_Conn" />
+      <Variable x:TypeArguments="uma:MobileDevice" Name="out_Conn" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="580,118.66666666666667" sap2010:WorkflowViewState.IdRef="StartSuite_1" SuiteName="EriBank IOS Test Suite">
+      <ra:StartSuite.ReportId>
+        <InArgument x:TypeArguments="x:Int32">
+          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">In_Report_ID</CSharpValue>
+        </InArgument>
+      </ra:StartSuite.ReportId>
+      <ra:StartSuite.suiteId>
+        <OutArgument x:TypeArguments="x:String">
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">out_Suite_ID</CSharpReference>
+        </OutArgument>
+      </ra:StartSuite.suiteId>
+    </ra:StartSuite>
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="580,118.66666666666667" sap2010:WorkflowViewState.IdRef="StartTest_3" Priority="Low" TestName="EriBank IOS Multiple Screen Test Case">
+      <ra:StartTest.ReportId>
+        <InArgument x:TypeArguments="x:Int32">
+          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">In_Report_ID</CSharpValue>
+        </InArgument>
+      </ra:StartTest.ReportId>
+      <ra:StartTest.SuiteId>
+        <InArgument x:TypeArguments="x:String">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">out_Suite_ID</CSharpValue>
+        </InArgument>
+      </ra:StartTest.SuiteId>
+      <ra:StartTest.testId>
+        <OutArgument x:TypeArguments="x:String">
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">out_TestID</CSharpReference>
+        </OutArgument>
+      </ra:StartTest.testId>
+    </ra:StartTest>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="580,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="EriBank_IOS" WorkbookPath="TestData\\TestData.xlsx">
+      <ui:ReadRange.DataTable>
+        <OutArgument x:TypeArguments="sd:DataTable">
+          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">EribankIOSMultipleAppData</CSharpReference>
+        </OutArgument>
+      </ui:ReadRange.DataTable>
+    </ui:ReadRange>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="580,3844" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="546,3653.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uma:MobileDeviceConnection CollectPageSource="{x:Null}" CollectScreenshot="{x:Null}" MirroringEnabled="{x:Null}" StartPage="{x:Null}" Close="Never" DisplayName="iPhone 13 | eriBank_iOS" sap:VirtualizedContainerService.HintSize="484,3565.3333333333335" sap2010:WorkflowViewState.IdRef="MobileDeviceConnection_1" LoggingEnabled="False" SingleInstanceForDevelopment="True" VideoRecordingEnabled="False" VideoRecordingQuality="Normal" VideoRecordingTimeLimit="600" WaitForPageUpdateDevelopment="True">
+              <uma:MobileDeviceConnection.AppiumUrl>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_126">CurrentRow["AppiumURL"].ToString()</CSharpValue>
+                </InArgument>
+              </uma:MobileDeviceConnection.AppiumUrl>
+              <uma:MobileDeviceConnection.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="platformName">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_120">CurrentRow["PlatformName"].ToString()</CSharpValue>
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="platformVersion">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_121">CurrentRow["PlatformVersion"].ToString()</CSharpValue>
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="deviceName">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_122">CurrentRow["DeviceName"].ToString()</CSharpValue>
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="browserstack.user">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_123">CurrentRow["User"].ToString()</CSharpValue>
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="browserstack.key">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_124">CurrentRow["Key"].ToString()</CSharpValue>
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="app">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_125">CurrentRow["App"].ToString()</CSharpValue>
+                </InArgument>
+              </uma:MobileDeviceConnection.Arguments>
+              <uma:MobileDeviceConnection.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="UiPathScopeContext" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,3437.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ee:iOS_Login sap:VirtualizedContainerService.HintSize="388,808.6666666666666" sap2010:WorkflowViewState.IdRef="iOS_Login_1" In_RealDevice="true">
+                      <ee:iOS_Login.In_App>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">CurrentRow["App"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:iOS_Login.In_App>
+                      <ee:iOS_Login.In_AppiumURL>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">CurrentRow["AppiumURL"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:iOS_Login.In_AppiumURL>
+                      <ee:iOS_Login.In_Conn>
+                        <InArgument x:TypeArguments="uma:MobileDevice">
+                          <CSharpValue x:TypeArguments="uma:MobileDevice" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">out_Conn</CSharpValue>
+                        </InArgument>
+                      </ee:iOS_Login.In_Conn>
+                      <ee:iOS_Login.In_DeviceName>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">CurrentRow["DeviceName"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:iOS_Login.In_DeviceName>
+                      <ee:iOS_Login.In_Key>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">CurrentRow["Key"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:iOS_Login.In_Key>
+                      <ee:iOS_Login.In_LogFile>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">CurrentRow["LogFile"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:iOS_Login.In_LogFile>
+                      <ee:iOS_Login.In_Password>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">CurrentRow["Password"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:iOS_Login.In_Password>
+                      <ee:iOS_Login.In_PlatformName>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">CurrentRow["PlatformName"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:iOS_Login.In_PlatformName>
+                      <ee:iOS_Login.In_PlatformVersion>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">CurrentRow["PlatformVersion"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:iOS_Login.In_PlatformVersion>
+                      <ee:iOS_Login.In_ReportID>
+                        <InArgument x:TypeArguments="x:Int32">
+                          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">In_Report_ID</CSharpValue>
+                        </InArgument>
+                      </ee:iOS_Login.In_ReportID>
+                      <ee:iOS_Login.In_TestID>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74">out_TestID</CSharpValue>
+                        </InArgument>
+                      </ee:iOS_Login.In_TestID>
+                      <ee:iOS_Login.In_User>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_75">CurrentRow["User"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:iOS_Login.In_User>
+                      <ee:iOS_Login.In_Username>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">CurrentRow["Username"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:iOS_Login.In_Username>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ee:iOS_Login>
+                    <ee:IOS_MakePayment sap:VirtualizedContainerService.HintSize="388,829.3333333333334" sap2010:WorkflowViewState.IdRef="IOS_MakePayment_1" In_RealDevice="true">
+                      <ee:IOS_MakePayment.In_Amount>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_99">CurrentRow["Amount"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_MakePayment.In_Amount>
+                      <ee:IOS_MakePayment.In_App>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_92">CurrentRow["App"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_MakePayment.In_App>
+                      <ee:IOS_MakePayment.In_AppiumURL>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_94">CurrentRow["AppiumURL"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_MakePayment.In_AppiumURL>
+                      <ee:IOS_MakePayment.In_Conn>
+                        <InArgument x:TypeArguments="uma:MobileDevice">
+                          <CSharpValue x:TypeArguments="uma:MobileDevice" sap2010:WorkflowViewState.IdRef="CSharpValue`1_95">out_Conn</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_MakePayment.In_Conn>
+                      <ee:IOS_MakePayment.In_DeviceName>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_91">CurrentRow["DeviceName"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_MakePayment.In_DeviceName>
+                      <ee:IOS_MakePayment.In_Key>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_97">CurrentRow["Key"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_MakePayment.In_Key>
+                      <ee:IOS_MakePayment.In_LogFile>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_93">CurrentRow["LogFile"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_MakePayment.In_LogFile>
+                      <ee:IOS_MakePayment.In_Name>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_98">CurrentRow["Name"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_MakePayment.In_Name>
+                      <ee:IOS_MakePayment.In_Phoneno>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_96">CurrentRow["Phone Number"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_MakePayment.In_Phoneno>
+                      <ee:IOS_MakePayment.In_PlatformName>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_89">CurrentRow["PlatformName"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_MakePayment.In_PlatformName>
+                      <ee:IOS_MakePayment.In_PlatformVersion>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_90">CurrentRow["PlatformVersion"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_MakePayment.In_PlatformVersion>
+                      <ee:IOS_MakePayment.In_ReportID>
+                        <InArgument x:TypeArguments="x:Int32">
+                          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_100">In_Report_ID</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_MakePayment.In_ReportID>
+                      <ee:IOS_MakePayment.In_TestID>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_101">out_TestID</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_MakePayment.In_TestID>
+                      <ee:IOS_MakePayment.In_User>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_88">CurrentRow["User"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_MakePayment.In_User>
+                    </ee:IOS_MakePayment>
+                    <ee:IOS_Mortgage_Req_And_Expense_Report sap:VirtualizedContainerService.HintSize="388,1040" sap2010:WorkflowViewState.IdRef="IOS_Mortgage_Req_And_Expense_Report_1" In_RealDevice="true">
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_Address1>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_111">CurrentRow["Address1"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_Address1>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_Address2>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_112">CurrentRow["Address2"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_Address2>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_Address3>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_113">CurrentRow["Address3"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_Address3>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_Age>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_110">CurrentRow["Age"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_Age>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_App>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_116">CurrentRow["App"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_App>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_AppiumURL>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_102">CurrentRow["AppiumURL"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_AppiumURL>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_Conn>
+                        <InArgument x:TypeArguments="uma:MobileDevice">
+                          <CSharpValue x:TypeArguments="uma:MobileDevice" sap2010:WorkflowViewState.IdRef="CSharpValue`1_106">out_Conn</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_Conn>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_DeviceName>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_103">CurrentRow["DeviceName"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_DeviceName>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_Key>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_119">CurrentRow["Key"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_Key>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_LastName>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_109">CurrentRow["Last Name"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_LastName>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_LoanAmount>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_114">CurrentRow["LoanAmount"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_LoanAmount>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_LogFile>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_107">CurrentRow["LogFile"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_LogFile>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_Name>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_108">CurrentRow["Name"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_Name>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_PlatformName>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_104">CurrentRow["PlatformName"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_PlatformName>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_PlatformVersion>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_105">CurrentRow["PlatformVersion"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_PlatformVersion>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_ReportID>
+                        <InArgument x:TypeArguments="x:Int32">
+                          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_117">In_Report_ID</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_ReportID>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_TestID>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_118">out_TestID</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_TestID>
+                      <ee:IOS_Mortgage_Req_And_Expense_Report.In_User>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_115">CurrentRow["User"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Mortgage_Req_And_Expense_Report.In_User>
+                    </ee:IOS_Mortgage_Req_And_Expense_Report>
+                    <ee:IOS_Logout sap:VirtualizedContainerService.HintSize="388,671.3333333333334" sap2010:WorkflowViewState.IdRef="IOS_Logout_1" In_RealDevice="true">
+                      <ee:IOS_Logout.In_App>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_77">CurrentRow["App"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Logout.In_App>
+                      <ee:IOS_Logout.In_AppiumURL>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_78">CurrentRow["AppiumURL"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Logout.In_AppiumURL>
+                      <ee:IOS_Logout.In_Conn>
+                        <InArgument x:TypeArguments="uma:MobileDevice">
+                          <CSharpValue x:TypeArguments="uma:MobileDevice" sap2010:WorkflowViewState.IdRef="CSharpValue`1_79">out_Conn</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Logout.In_Conn>
+                      <ee:IOS_Logout.In_DeviceName>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_80">CurrentRow["DeviceName"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Logout.In_DeviceName>
+                      <ee:IOS_Logout.In_Key>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_81">CurrentRow["Key"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Logout.In_Key>
+                      <ee:IOS_Logout.In_LogFile>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_82">CurrentRow["LogFile"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Logout.In_LogFile>
+                      <ee:IOS_Logout.In_PlatformName>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_83">CurrentRow["PlatformName"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Logout.In_PlatformName>
+                      <ee:IOS_Logout.In_PlatformVersion>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_84">CurrentRow["PlatformVersion"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Logout.In_PlatformVersion>
+                      <ee:IOS_Logout.In_ReportID>
+                        <InArgument x:TypeArguments="x:Int32">
+                          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_85">In_Report_ID</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Logout.In_ReportID>
+                      <ee:IOS_Logout.In_TestID>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_86">out_TestID</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Logout.In_TestID>
+                      <ee:IOS_Logout.In_User>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_87">CurrentRow["User"].ToString()</CSharpValue>
+                        </InArgument>
+                      </ee:IOS_Logout.In_User>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ee:IOS_Logout>
+                  </Sequence>
+                </ActivityAction>
+              </uma:MobileDeviceConnection.Body>
+              <uma:MobileDeviceConnection.InputConnection>
+                <InArgument x:TypeArguments="uma:MobileDevice">
+                  <CSharpValue x:TypeArguments="uma:MobileDevice" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">in_Conn</CSharpValue>
+                </InArgument>
+              </uma:MobileDeviceConnection.InputConnection>
+              <uma:MobileDeviceConnection.LoggingFolderPath>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_127">CurrentRow["LogFile"].ToString()</CSharpValue>
+                </InArgument>
+              </uma:MobileDeviceConnection.LoggingFolderPath>
+              <uma:MobileDeviceConnection.OutputConnection>
+                <OutArgument x:TypeArguments="uma:MobileDevice">
+                  <CSharpReference x:TypeArguments="uma:MobileDevice" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">out_Conn</CSharpReference>
+                </OutArgument>
+              </uma:MobileDeviceConnection.OutputConnection>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uma:MobileDeviceConnection>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <ui:ForEachRow.DataTable>
+        <InArgument x:TypeArguments="sd:DataTable">
+          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">EribankIOSMultipleAppData</CSharpValue>
+        </InArgument>
+      </ui:ForEachRow.DataTable>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>

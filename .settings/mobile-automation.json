@@ -1,0 +1,127 @@
+{
+  "GenerateCrossPlatformAttributes": false,
+  "GenerateSelectorsForInnerElements": true,
+  "Connections": [
+    {
+      "Name": "iphone 14",
+      "Description": null,
+      "Url": "https://mobile-hub.lambdatest.com/wd/hub",
+      "PlatformName": "iOS",
+      "PlatformVersion": "14",
+      "DeviceName": "IPhone 11",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {
+        "app": "bs://d89150941708fc2b15949e47a92c4b7de43e6c5f",
+        "user": "orchestratoratre_r70TaX",
+        "accessKey": "FqtGQpBMYWz8GSKX8VNF",
+        "isRealMobile": "true"
+      },
+      "GeoLocation": null,
+      "LoggingModel": {
+        "LoggingEnabled": true,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      }
+    },
+    {
+      "Name": "iphone 11",
+      "Description": null,
+      "Url": "http://localhost:4723/wd/hub",
+      "PlatformName": "iOS",
+      "PlatformVersion": "14",
+      "DeviceName": "IPhone 11",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {},
+      "GeoLocation": null,
+      "LoggingModel": {
+        "LoggingEnabled": true,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      }
+    },
+    {
+      "Name": "iPhone 13",
+      "Description": null,
+      "Url": "http://hub-cloud.browserstack.com/wd/hub",
+      "PlatformName": "iOS",
+      "PlatformVersion": "15",
+      "DeviceName": "iPhone 13",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {},
+      "GeoLocation": null,
+      "LoggingModel": {
+        "LoggingEnabled": false,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      }
+    }
+  ],
+  "Applications": [
+    {
+      "$id": "1",
+      "Name": "Eribank",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "iOS": {
+          "Capabilities": {
+            "user": "testingxpertsqa",
+            "accesKey": "L4rRARiRUYHD39xLM6FyJ7xGVCW8DhMVultimC72ky04DjJjZs",
+            "app": "lt://APP1016053741710414536677305"
+          },
+          "StartPage": null
+        }
+      }
+    },
+    {
+      "$id": "2",
+      "Name": "EriBank IOS",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "iOS": {
+          "Capabilities": {
+            "app": "C:\\Users\\AjayBezawada\\EriBank.ipa"
+          },
+          "StartPage": null
+        }
+      }
+    },
+    {
+      "$id": "3",
+      "Name": "eriBank_iOS",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "iOS": {
+          "Capabilities": {
+            "browserstack.user": "orchestratoratre_r70TaX",
+            "browserstack.key": "FqtGQpBMYWz8GSKX8VNF",
+            "app": "bs://d89150941708fc2b15949e47a92c4b7de43e6c5f"
+          },
+          "StartPage": null
+        },
+        "Android": {
+          "Capabilities": {},
+          "StartPage": null
+        }
+      }
+    }
+  ],
+  "NormalizeSliderValue": false,
+  "IdsMaxAllowedLength": 40,
+  "LogsPath": "%TEMP%\\UiPath Mobile Automation Logs",
+  "Variables": {}
+}

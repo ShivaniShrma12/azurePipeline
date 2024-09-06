@@ -1,0 +1,214 @@
+{
+  "name": "SampleUipathTest",
+  "projectId": "4317b4e6-fe32-4c21-8d48-ac772ac6589d",
+  "description": "Test Automation Project",
+  "main": "Main.xaml",
+  "dependencies": {
+    "API_Library_CSharp": "[1.0.28]",
+    "Desktop_Library_New_Windows_CSharp": "[1.0.18]",
+    "EriBank_Android_Library_CSharp": "[1.0.9]",
+    "EriBank_IOS_Library_New_Windows_CSharp": "[1.0.13]",
+    "ReporterForUiPath.Activities": "[3.0.1]",
+    "RestSharp": "[106.11.2]",
+    "UiPath": "[23.4.62.63011]",
+    "UiPath_Utilities": "[2.0.23]",
+    "UiPath.Excel.Activities": "[2.20.3]",
+    "UiPath.Mail.Activities": "[1.20.3]",
+    "UiPath.System.Activities": "[23.10.5]",
+    "UiPath.Testing.Activities": "[23.4.1]",
+    "UiPath.WebAPI.Activities": "[1.9.2]",
+    "Web_Application_Library_CSharp": "[1.0.80]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.8.0.0",
+  "projectVersion": "3.1.23",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "48daf2f3-4189-46a8-8c46-347901cf46c0",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Desktop Application\\OrderFromApplication_TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d0f538a8-db7a-4834-9bf8-3847d95cb72c",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\JsonPlaceholder API Tests\\ApiPass_TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "99d180c6-73a6-47e1-bdc6-5011b7b637b0",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\SalesForce\\SalesForce Application.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "124b1865-ddbb-4c7e-843c-e17af381bd5b",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\SAP Shopping Cart Application\\SAP_AddtoCart Test Case.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d9d18d6f-50a6-4cef-9fa4-0a3e44fe8673",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\JsonPlaceholder API Tests\\ApiFail_TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "542f43ef-5765-4b8b-a651-e366ce36702c",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\EriBank Mobile Application\\EriBank IOS Application\\IOS_LoginLogout Test Case.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "42090ee1-4f8a-43b6-9472-3d8cacc30b08",
+        "testCaseType": "TestCase",
+        "fileName": "Main.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "dbc01fbb-a63d-4366-8985-08d8771f7325",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\EriBank Mobile Application\\EriBank Android Application\\Android_LoginLogout_TC.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f5ddaa2a-aac7-4991-b6ba-f6185b63fc2a",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\EriBank Mobile Application\\EriBank Android Application\\Android_MultipleScreen_TC.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c4901b9e-03e2-4075-b573-0e126b679bda",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\EriBank Mobile Application\\EriBank IOS Application\\IOS_MultipleScreen Test Case.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "af3ba1a7-7f1c-4a49-9e61-d1cf1d074b5a",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_CartTC_90.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f084fdda-d317-489a-9ed0-1f658447485a",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_CartTC_95.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9b753654-21f9-4780-8f93-c424d1a4c7c5",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_CheckoutTC_160.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "cb8342bd-8006-4f79-8925-70f5854bcc10",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_HomePageTC_506.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a8029408-5973-47c3-875d-85d3803096cc",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_LoginTC_207.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "134f1ad7-3e12-453d-b1fa-9fead8127753",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_LoginTC_211.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b192ebaa-a6de-402e-90c6-6091cdb8fddc",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_LoginTC_231.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "af38b10a-0949-482c-ac60-dceaa8f0e674",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_LoginTC_239.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "abeb077b-ca1c-4097-9b2d-651fff54dde4",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_OrderTC_159.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4ea33aa6-4cb0-4bbf-b1b8-cb861ee7cd1d",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_RegistrationTC_277.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2d6df53f-c949-4e85-9a70-cacf54020b04",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_ReviewTC_174.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4a2f9d6c-1629-4dce-b20e-b187e117d51e",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_ReviewTC_175.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4ffbe0ee-27a7-4c35-8e33-090ae1b22bcc",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_ShippingTC_502.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "db48fdc5-4b57-40c8-a363-2534f1ca2ea2",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_WishlistTC_183.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "44f2d424-68ba-4b91-aec6-997317b2aa35",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Web Application\\Ecommerce Application\\ECOM_WishlistTC_186.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "CSharp",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

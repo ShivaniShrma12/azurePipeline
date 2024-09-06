@@ -1,0 +1,9 @@
+{
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/testimmetbfx/HyperAutomateFrameworkTenant/testmanager_/",
+  "defaultProject": {
+    "id": "77c43f6d-1f0a-0000-7a06-0b4603660c4a",
+    "name": "Tx_HyperAutomationProject_Windows",
+    "key": "TXHW"
+  }
+}

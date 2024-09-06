@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge: Tx_HyperAutomationProject_Windows_CSharp [Jenkins]",
+  "Type": "App",
+  "Id": "RvN8tnjNbkWA6U0vmlOSeA",
+  "Reference": "vfU0zHj2n0mQguVFb6nHmg/RvN8tnjNbkWA6U0vmlOSeA",
+  "Created": "2024-07-15T17:43:52.2341909Z",
+  "Updated": "2024-07-15T17:43:52.2341909Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
