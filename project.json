@@ -11,7 +11,6 @@
     "ReporterForUiPath.Activities": "[3.0.1]",
     "RestSharp": "[106.11.2]",
     "UiPath": "[23.4.62.63011]",
-    "UiPath_Utilities": "[2.0.23]",
     "UiPath.Excel.Activities": "[2.20.3]",
     "UiPath.Mail.Activities": "[1.20.3]",
     "UiPath.System.Activities": "[23.4.4]",

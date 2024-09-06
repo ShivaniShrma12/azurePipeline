@@ -9,7 +9,7 @@
     <InArgument x:TypeArguments="x:Int32" />
   </this:ApiPass_TestCase.In_Report_ID>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>856,1422.6666666666667</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>752,1342.6666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -21,7 +21,6 @@
       <x:String>ReporterForUiPath.Enums</x:String>
       <x:String>System</x:String>
       <x:String>System.Activities</x:String>
-      <x:String>System.Activities.DynamicUpdate</x:String>
       <x:String>System.Activities.Expressions</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
       <x:String>System.Activities.Statements</x:String>
