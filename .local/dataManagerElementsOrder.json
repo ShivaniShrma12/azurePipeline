@@ -921,6 +921,53 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/JsonPlaceholder API Tests/ECOM_WishlistTC_183.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "job_currentJob&Sequence_1",
+        "dt_browser&Sequence_1",
+        "str_workflowID&Sequence_1",
+        "str_targetBrowser&Sequence_1",
+        "bool_browserFlag&Sequence_1",
+        "int_stepNumber&Sequence_1",
+        "int_initialStepNumber&Sequence_1",
+        "str_browserName&Sequence_1",
+        "str_signupPageHeading&Sequence_1",
+        "dt_ecomTestData&Sequence_1",
+        "dt_jiraCreds&Sequence_1",
+        "str_folderPath&Sequence_1",
+        "str_filePath&Sequence_1",
+        "str_serverUrl_jira&Sequence_1",
+        "str_tokenApi_jira&Sequence_1",
+        "str_username_jira&Sequence_1",
+        "str_reportPath&Sequence_1",
+        "dt_azureCreds&Sequence_1",
+        "str_azurePAt&Sequence_1",
+        "str_azureUsername&Sequence_1",
+        "str_azureProjectUrl&Sequence_1",
+        "str_failedScreenshotPath&Sequence_1",
+        "str_failedScreenshotName&Sequence_1",
+        "list_steps&Sequence_1",
+        "strArray_exceptionMessage&Sequence_1",
+        "str_exceptionMessage&Sequence_1",
+        "str_testcaseID&Sequence_1",
+        "str_splitReproSteps&Sequence_1",
+        "strArray_splitReproSteps&Sequence_1",
+        "str_reproSteps_azure&Sequence_1",
+        "str_issueID&Sequence_1",
+        "str_testcaseName&Sequence_1",
+        "str_reproSteps_jira&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_BugID",
+        "In_Report_ID",
+        "out_TestID",
+        "out_Suite_ID"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
